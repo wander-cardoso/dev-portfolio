@@ -3,7 +3,6 @@ import { Sora } from "next/font/google";
 import "./globals.css";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 
-
 const font = Sora({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   subsets: ["latin"],
@@ -11,7 +10,7 @@ const font = Sora({
 
 export const metadata: Metadata = {
   title: "",
-  description:'O mais completo portifólio FullStack.',
+  description: "O mais completo portifólio FullStack.",
 };
 
 export default function RootLayout({
@@ -24,7 +23,7 @@ export default function RootLayout({
       <body className={font.className}>
         <ResponsiveNav />
         {children}
-        </body>
+      </body>
     </html>
   );
 }
