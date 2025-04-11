@@ -32,20 +32,20 @@ const Nav = ({ openNav }: Props) => {
 
   return (
     <div
-      className={`"fixed ${navBg ? "bg-[#240b39]" : "fixed"} h-[12vh] z-[10]  w-full transition-all duration-200`}
+      className={`"fixed ${navBg ? "bg-[#240b39]" : "fixed"} h-[12vh] z-[10]  w-full  transition-all duration-200`}
     >
-      <div className="flex items-center h-full justify-between w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
+      <div className="flex items-center h-full justify-between  w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
         {/* Logo Section */}
         <Image
           src="/images/logo.svg"
           alt="Logo"
-          width={120}
-          height={120}
-          className="cursor-pointer ml-[-1.5rem] sm:ml-0"
+          width={100}
+          height={100}
+          className="cursor-pointer ml-[-1.5rem] sm:ml-0 pl-6"
         />
         {/* Navigation Links */}
         <div className="flex items-center space-x-10">
-          <div className="hidden lg:flex items-center space-x-10">
+          <div className="hidden lg:flex items-center gap-14 space-x-10">
             {navLinks.map((navlink) => {
               return (
                 <Link key={navlink.id} href={navlink.url}>

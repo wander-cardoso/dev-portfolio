@@ -1,16 +1,16 @@
 export const BaseInfo = {
   name: "Wander Cardoso",
-  position: "Full-Stack Web Developer",
+  position: "Full-Stack Developer",
   description:
-    "Sou desevolvedor Fullstack apaixonado pela tecnologia. clique e conheça mais sobre mim.",
+    "Sou desenvolvedor Full-Stack, apaixonado pela tecnologia e comprometido á entregar soluções personalizadas para Aplicações, Sistemas e Web-Sites. Com uma mistura de criatividade e conhecimento técnico, ajudo as empresas a elevar sua presença online e atingir seus objetivos!",
   profilePic:
     "https://media.licdn.com/dms/image/v2/D4D03AQGtcXbWYhHYQA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1714042109702?e=1749686400&v=beta&t=O_5-JSvqTDsMhCHO-yz9Dp8-DIf9XGTZLRFHDof-vFU",
 };
 
 export const aboutInfo = {
-  title: "Crafting Web Application with Passion and Precision",
+  title: "Criando aplicativos web com paixão e precisão",
   description:
-    "Sou desenvolvedor Full-Stack apaixonado pela tecnologia comprometido á entregar soluções web personalizadas. Com uma mistura de criatividade e conhecimento técnico, ajudo as empresas a elevar sua presença online e atingir seus objetivos.",
+    "",
   experience: "2+",
 };
 
@@ -170,7 +170,7 @@ export const skillsData = [
 ];
 
 export const contactData = {
-  phone: "+351(932748700)",
-  email: "wander.hsmc@gmail.com",
-  address: "Braga , Portugal",
+  Telemovel: "+351(932748700)",
+  Email: "wander.hsmc@gmail.com",
+  Endereço: "Braga , Portugal",
 };
