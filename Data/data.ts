@@ -22,7 +22,7 @@ export const projectData = [
     description:
       "Vamos sortear os números? Essa aplicação vai interagir na sua brincadeira, deixando dinâmico, simples e justo o sorteio dos números.",
     icon: "/images/sorteador-numeros.png",
-    url: "https://",
+    url: "https://sorteador-numeros-pearl.vercel.app/",
   },
   {
     id: 2,
@@ -37,14 +37,14 @@ export const projectData = [
     title: "Meteora E-commerce",
     description: "Uma loja completa em roupas e acessórios.",
     icon: "/images/siteljmeteora.png",
-    url: "https://",
+    url: "https://projeto-meteora-ecommerce.vercel.app/",
   },
   {
     id: 4,
     title: "Amigo Secreto",
     description: "Uma Boa forma de sortear nomes de forma aleatória.",
     icon: "/images/amigo-secreto.png",
-    url: "https://",
+    url: "https://amigo-secreto-ten-sigma.vercel.app/",
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ export const projectData = [
     description:
       "Site dedicado a eventos que disponibilizem tickets para venda, ao qual deseja controlar de forma prática e segura as vendas.",
     icon: "/images/compre-ticket.png",
-    url: "https://",
+    url: "https://compre-ingresso.vercel.app/",
   },
   {
     id: 6,
@@ -60,7 +60,7 @@ export const projectData = [
     description:
       "Aplicação muito útil, para qualquer perfil de usuário, para auxiliar nas compras, facilitando a vida na organização, economizando no seu bolso e ainda não te deixa esquecer de nenhum intem.",
     icon: "/images/lista-de-compras.png",
-    url: "https://",
+    url: "https://lista-de-compras-wheat-eta.vercel.app/",
   },
 ];
 

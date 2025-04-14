@@ -91,7 +91,7 @@ const About = () => {
             <p className="text-gray-500 text-center text-sm mt-3 font-bold">
               {aboutInfo.projects}
             </p>
-        </div> 
+          </div>
         </div>
       </div>
     </div>
