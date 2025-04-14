@@ -9,6 +9,7 @@ const HomePage = () => {
     <div >
       <header className='relative'>
         <title>Home | Wander</title>
+        
       </header>
       <Home />
     </div>

@@ -11,6 +11,9 @@ const font = Sora({
 export const metadata: Metadata = {
   title: "",
   description: "O mais completo portifólio FullStack.",
+  icons: {
+    icon: '/images/favicon.ico',
+  },
 };
 
 export default function RootLayout({
