@@ -1,8 +1,8 @@
-import SectionHeading from "@/components/Helper/SectionHeading";
 import { aboutInfo } from "@/Data/data";
 import Image from "next/image";
 import React from "react";
 import { FaCheck } from "react-icons/fa";
+import SectionHeading from "../components/Helper/SectionHeading";
 
 const About = () => {
   return (
@@ -11,7 +11,7 @@ const About = () => {
       <div className="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-20">
         {/*text content*/}
         <div>
-          <div>
+          <div data-aos="fade-right" data-aos-delay="200">
             <h1 className="text-bg text-[26px] sm:text-3xl md:text-4xl lg:text-5xl font-bold  ">
               {aboutInfo.title}
             </h1>
@@ -52,7 +52,11 @@ const About = () => {
             {/*Stats content*/}
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-16 items-center lg:mx-auto">
+        <div
+          data-aos="fade-left"
+          data-aos-delay="200"
+          className="grid grid-cols-2 gap-16 items-center lg:mx-auto"
+        >
           <div>
             {/* 1st stats*/}
             <Image

@@ -36,13 +36,14 @@ const Nav = ({ openNav }: Props) => {
     >
       <div className="flex items-center h-full justify-between  w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
         {/* Logo Section */}
+        <Link href="/"> 
         <Image
           src="/images/logo.svg"
           alt="Logo"
           width={100}
           height={100}
           className="cursor-pointer ml-[-1.5rem] sm:ml-0 pl-6"
-        />
+        /></Link>
         {/* Navigation Links */}
         <div className="flex items-center space-x-10">
           <div className="hidden lg:flex items-center gap-14 space-x-10">
