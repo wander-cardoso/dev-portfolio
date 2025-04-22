@@ -56,10 +56,10 @@ const Nav = ({ openNav }: Props) => {
             })}
           </div>
           {/* Button*/}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4"><Link href="/contact">
             <button className="md:px-10 md:py-2 px-5 py-2 text-green-900 fonts-semibold sm:text-base text-sm bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg">
               Hire Me!
-            </button>
+            </button></Link>
             {/* Mobile Menu Icon */}
             <HiBars3BottomRight
               onClick={openNav}

@@ -35,14 +35,16 @@ const Hero = () => {
               {BaseInfo.description}
             </p>
             {/* Button */}
-            <button
-              data-aos="zoom-down"
-              data-aos-delay="2000"
-              className="md:px-8 md:py-2.5 px-6 py-1.5 text-primary font-semibold text-sm md:text-lg transition-all duration-200 rounded-lg my-8 bg-green-950 hover:bg-green-800 flex items-center space-x-2"
-            >
-              <span>Download CV</span>
-              <FaDownload />
-            </button>
+            <a href="/curriculo-wander-europass.pdf" download>
+              <button
+                data-aos="zoom-down"
+                data-aos-delay="2000"
+                className="md:px-8 md:py-2.5 px-6 py-1.5 text-primary font-semibold text-sm md:text-lg transition-all duration-200 rounded-lg my-8 bg-green-950 hover:bg-green-800 flex items-center space-x-2"
+              >
+                <span>Download CV</span>
+                <FaDownload />
+              </button>
+            </a>
           </div>
           {/* Image Content */}
           <div
