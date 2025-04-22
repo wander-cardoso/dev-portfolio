@@ -18,7 +18,7 @@ type Props = {
 
 const ProjectCard = ({ project }: Props) => {
   return (
-    <Tilt className=" p-6 rounded-lg bg-emerald-950 h-64  cursor-pointer  overflow-hidden shadow-lg hover:shadow-green-900 ">
+    <Tilt className=" p-6 rounded-lg bg-tertiary h-64  cursor-pointer  overflow-hidden shadow-lg hover:shadow-green-900 ">
       <Link
         href={project.url}
         target="_blank"
@@ -32,7 +32,7 @@ const ProjectCard = ({ project }: Props) => {
         />
       </Link>
       <h1 className="mt-4 text-lg font-bold text-gray-100">{project.title}</h1>
-      <p className="mt-3 text-sm text-white text-opacity-80 text-justify text-ellipsis ">
+      <p className="mt-3 text-sm text-primary text-opacity-80 text-justify text-ellipsis ">
         {project.description}
       </p>
     </Tilt>

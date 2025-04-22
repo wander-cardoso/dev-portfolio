@@ -126,7 +126,7 @@ export const skillsData = [
 ];
 
 export const contactData = {
-  Telemovel: "+351(932748700)",
+  Telemovel: "(+351) 932 748 700",
   Email: "wander.hsmc@gmail.com",
-  Endereço: "Braga , Portugal",
+  Endereço: "São Victor - Braga , Portugal",
 };

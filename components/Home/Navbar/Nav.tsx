@@ -62,7 +62,7 @@ const Nav = ({ openNav }: Props) => {
             {/* Mobile Menu Icon */}
             <HiBars3BottomRight
               onClick={openNav}
-              className="w-8 h-8 cursor-pointer text-white lg:hidden"
+              className="w-8 h-8 cursor-pointer text-primary lg:hidden"
             />
           </div>
         </div>

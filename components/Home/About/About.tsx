@@ -22,7 +22,7 @@ const About = () => {
             <div className="mt-8">
               <div className="flex items-center space-x-2 mb-6">
                 <div className="checkbox bg-blue-800">
-                  <FaCheck className="text-white" />
+                  <FaCheck className="text-primary" />
                 </div>
                 <p className="text-sm sm:text-base md:text-lg font-bold text-gray-300">
                   Front-End Development
@@ -32,7 +32,7 @@ const About = () => {
             <div className="mt-8">
               <div className="flex items-center space-x-2 mb-6">
                 <div className=" checkbox bg-orange-800 ">
-                  <FaCheck className="text-white" />
+                  <FaCheck className="text-primary" />
                 </div>
                 <p className="text-sm sm:text-base md:text-lg font-bold text-gray-300">
                   Back-End Development
@@ -42,7 +42,7 @@ const About = () => {
             <div className="mt-8">
               <div className="flex items-center space-x-2 mb-6">
                 <div className="checkbox bg-green-800">
-                  <FaCheck className="text-white" />
+                  <FaCheck className="text-primary" />
                 </div>
                 <p className="text-sm sm:text-base md:text-lg font-bold text-gray-300">
                   Full-Stack Development

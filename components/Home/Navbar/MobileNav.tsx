@@ -20,7 +20,7 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
       ></div>
       {/* nav links*/}
       <div
-        className={`text-white ${navOpen}  transform transition-all duration-500 delay-300 fixed justify-center flex flex-col h-full w-[80%] sm:w-[60%] bg-green-950 space-y-6 gap-6 z-[10000] `}
+        className={`text-primary ${navOpen}  transform transition-all duration-500 delay-300 fixed justify-center flex flex-col h-full w-[80%] sm:w-[60%] bg-green-950 space-y-6 gap-6 z-[10000] `}
       >
         {navLinks.map((navlink) => {
           return (
@@ -34,7 +34,7 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
         {/* close Button*/}
         <CgClose
           onClick={closeNav}
-          className="sm:w-8 sm:h-8 w-8 h-8 cursor-pointer text-white absolute top-[0.7rem] right-[1.4rem]"
+          className="sm:w-8 sm:h-8 w-8 h-8 cursor-pointer text-primary absolute top-[0.7rem] right-[1.4rem]"
         />
       </div>
     </div>

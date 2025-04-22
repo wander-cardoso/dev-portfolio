@@ -4,10 +4,10 @@
 
 @layer components {
   .nav__link {
-    @apply relative text-base font-medium w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-emerald-500 text-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-right;
+    @apply relative text-base font-medium w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-emerald-500 text-primary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-right;
   }
   .text-bg {
-    background-image: linear-gradient(to right, #27391C 10%, #ffffff 100%);
+    background-image: linear-gradient(to right, #27391c 3%, #ffffff 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -15,5 +15,16 @@
   .checkbox {
     @apply w-7 h-7 flex flex-col items-center justify-center;
   }
-  .bg-primary{ @apply bg-[#021119]}
+  .bg-primary {
+    @apply bg-[#021119];
+  }
+  .bg-secondary {
+    @apply bg-green-950;
+  }
+  .bg-tertiary {
+    @apply bg-emerald-950;
+  }
+  .text-primary {
+    @apply text-white;
+  }
 }
