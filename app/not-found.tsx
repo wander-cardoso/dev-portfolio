@@ -8,7 +8,7 @@ const notFound = () => {
         <title>Não encontrado | Wander</title>
       </header>
       <div className="flex flex-col bg-secondary items-center w-auto justify-center gap-2  py-24">
-        <h1 className="text-sm  overflow-hidden  lg:text-3xl text-primary  h-12 text-center animate-bounce">
+        <h1 className="text-sm  overflow-hidden  lg:text-3xl text-textprimary  h-12 text-center animate-bounce">
           Página não encontrada clique na imagem 👇🏼 para retornar a tela
           inicial!
         </h1>

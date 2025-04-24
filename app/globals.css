@@ -2,29 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* claro */
+  --bg-primary: #e5e5e5;
+  --bg-secondary: #79716b;
+  --bg-tertiary: #d6d3d1;
+  --text-primary: #000000;
+  --text-secondary: #18181b;
+  --accent: #032e15;
+  --button-bg: #d6d3d1;
+  --button-bg-hover: #a1a1a1;
+  --button-text: #ffffff;
+  --border-color: #d6d3d1;
+}
+
+html.dark {
+  /* escuro */
+  --bg-primary: #020618;
+  --bg-secondary: #065f46;
+  --bg-tertiary: #020618;
+  --text-primary: #ffffff;
+  --text-secondary: #d1d5db;
+  --accent: #032e15;
+  --button-bg: #032e15;
+  --button-bg-hover: #065f46;
+  --button-text: #ffffff;
+  --border-color: #032e15;
+}
+
 @layer components {
   .nav__link {
-    @apply relative text-base font-medium w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-emerald-500 text-primary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-right;
+    @apply relative text-base font-medium w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-emerald-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-right;
+    color: var(--text-primary);
   }
-  .text-bg {
-    background-image: linear-gradient(to right, #27391c 3%, #ffffff 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
+  .onsubmit {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border-color: var(--accent);
+    @apply flex-1 placeholder:text-gray-600 px-6 py-3 rounded-md border outline-none w-full;
   }
+
   .checkbox {
     @apply w-7 h-7 flex flex-col items-center justify-center;
   }
-  .bg-primary {
-    @apply bg-[#021119];
-  }
-  .bg-secondary {
-    @apply bg-green-950;
-  }
-  .bg-tertiary {
-    @apply bg-emerald-950;
-  }
-  .text-primary {
-    @apply text-white;
+
+  .text-bg {
+    background-image: linear-gradient(
+      to right,
+      var(--accent),
+      var(--text-primary)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }

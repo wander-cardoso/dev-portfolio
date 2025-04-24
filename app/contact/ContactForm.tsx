@@ -1,62 +1,146 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 
 const ContactForm = () => {
+  const [result, setResult] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+
+  const validateForm = (formData: FormData) => {
+    const email = formData.get("email") as string;
+    const phone = formData.get("phone") as string;
+    const message = formData.get("message") as string;
+
+    if (!email || !phone || !message) {
+      return "Please fill out all required fields.";
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return "Invalid email address.";
+    }
+
+    return null;
+  };
+
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setResult("");
+    setIsLoading(true);
+
+    const formData = new FormData(event.target as HTMLFormElement);
+
+    // Validation before sending
+    const validationError = validateForm(formData);
+    if (validationError) {
+      setResult(validationError);
+      setIsLoading(false);
+      return;
+    }
+
+    formData.append("access_key", "ab0947e4-81ed-49da-a2b2-9902b3eb1785");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("✅ Form submitted successfully!");
+      (event.target as HTMLFormElement).reset();
+    } else {
+      setResult("❌ Error: " + data.message);
+    }
+
+    setIsLoading(false);
+  };
+
   return (
-    <div className="bg-black/50 rounded-lg p-4 m-10  w-auto ">
-      <h1 className="text-bg text-2xl md:text-3xl lg:text-[2.5rem] font-bold ">
+    <div id="contact" className="bg-black/50 rounded-lg p-4 m-10 w-auto">
+      <h1 className="text-bg text-2xl md:text-3xl lg:text-[2.5rem] font-bold">
         Let's Work Together?
       </h1>
-      <p className="text-gray-200 mt-3 lg:text-base text-xs md:text-sm ">
-        If you’d like to get in touch with me, you can do so through these links
-        or the form...
+      <p className="text-gray-200 mt-3 lg:text-base text-xs md:text-sm">
+        If you'd like to get in touch with me, use the links or fill out the
+        form below 👇
       </p>
-      <form className="mt-8 block w-full overflow-hidden">
+
+      <form onSubmit={onSubmit} className="mt-8 block w-full overflow-hidden">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <input
+            name="first_name"
             type="text"
             placeholder="First name"
-            className="flex-1 bg-black text-primary placeholder:text-gray-600 px-6 py-3 rounded-md border-[1.5px] bordere-gray-200 border-opacity-15 outline-none w-full"
+            required
+            className="onsubmit"
           />
           <input
+            name="last_name"
             type="text"
             placeholder="Last name"
-            className="flex-1 bg-black text-primary placeholder:text-gray-600 px-6 py-3 rounded-md border-[1.5px] bordere-gray-200 border-opacity-15 outline-none w-full"
+            required
+            className="onsubmit"
           />
         </div>
 
         <div className="flex flex-col mt-5 md:flex-row items-center justify-between gap-4">
           <input
+            name="email"
             type="email"
-            placeholder="E-mail address"
-            className="flex-1 bg-black text-primary placeholder:text-gray-600 px-6 py-3 rounded-md border-[1.5px] bordere-gray-200 border-opacity-15 outline-none w-full"
+            placeholder="Email address"
+            required
+            className="onsubmit"
           />
           <input
+            name="phone"
             type="text"
-            placeholder="Phone Number"
-            className="flex-1 bg-black text-primary placeholder:text-gray-600 px-6 py-3 rounded-md border-[1.5px] bordere-gray-200 border-opacity-15 outline-none w-full"
+            placeholder="Phone number"
+            required
+            className="onsubmit"
           />
         </div>
+
         <div>
-          <select className="w-full mt-5 bg-black text-primary placeholder:text-gray-600 px-4 py-3.5 rounded-md border-[1.5px] border-gray-200 border-opacity-15 outiline-none">
+          <select
+            name="service"
+            className="w-full mt-5 bg-black text-textprimary px-4 py-3.5 rounded-md border border-gray-700 outline-none"
+          >
             <option value="" disabled selected>
-              {" "}
-              Select an option
+              Select a service
             </option>
             <option value="frontend">Frontend Development</option>
             <option value="backend">Backend Development</option>
             <option value="fullstack">Fullstack Development</option>
           </select>
         </div>
+
         <textarea
+          name="message"
           rows={7}
-          placeholder="Message"
-          className="w-full mt-5 bg-black text-primary placeholder:text-gray-600 px-4 py-3.5 rounded-md border-[1.5px] border-gray-200 border-opacity-15 outiline-none"
+          placeholder="Your message"
+          required
+          className="w-full mt-5 bg-black text-textprimary px-4 py-3.5 rounded-md border border-gray-700 outline-none"
         ></textarea>
-        <div className="mt-4">
-          <button className="px-8 py-3.5 bg-tertiary hover:bg-emerald-800 transition-all duration-150 rounded-full text-primary">
-            Send Message
+
+        <div className="mt-4 flex flex-col gap-2">
+          <button
+            type="submit"
+            disabled={isLoading}
+            className="px-8 py-3.5 bg-bgemerald hover:bg-emerald-800 transition-all duration-150 rounded-full text-textprimary flex items-center justify-center gap-2"
+          >
+            {isLoading ? (
+              <>
+                <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                Sending...
+              </>
+            ) : (
+              "Send Message"
+            )}
           </button>
+          <p className="text-textprimary text-base">{result}</p>
         </div>
       </form>
     </div>

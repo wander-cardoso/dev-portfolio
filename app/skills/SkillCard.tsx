@@ -14,10 +14,9 @@ const SkillCard = ({ skill }: Props) => {
   const { image, title, percent } = skill;
   return (
     <div
-       data-aos="flip-left"
+      data-aos="flip-left"
       data-aos-delay="100"
-
-      className="p-6 hover:bg-emerald-800 duration-300 grid grid-cols-2 transition-all  items-center cursor-pointer text-center h-60 rounded-lg bg-tertiary"
+      className="p-6 hover:bg-emerald-800 duration-300 grid grid-cols-2 transition-all  items-center cursor-pointer text-center h-60 rounded-lg bg-bgemerald"
     >
       <Image
         src={image}
@@ -26,8 +25,10 @@ const SkillCard = ({ skill }: Props) => {
         height={100}
         className="mx-auto object-cover"
       />
-      <h1 className="text-[1.125rem] mt-4 text-primary font-[600]">{title}</h1>
-      <div className="bg-black mt-4 rounded-lg col-span-2 p-2 text-primary opacity-40">
+      <h1 className="text-[1.125rem] mt-4 text-textprimary font-[600]">
+        {title}
+      </h1>
+      <div className="bg-bgblack mt-4 rounded-lg col-span-2 p-2 text-textprimary opacity-40">
         {percent}
       </div>
     </div>

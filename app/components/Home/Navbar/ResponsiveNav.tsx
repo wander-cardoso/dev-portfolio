@@ -1,20 +1,22 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
+import { ThemeProvider } from "../../Helper/ThemeProvider";
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
 
 const ResponsiveNav = () => {
   const [showNav, setShowNav] = useState(false);
 
-  const showNavHadler = () => setShowNav(true);
+  const showNavHandler = () => setShowNav(true);
   const closeNavHandler = () => setShowNav(false);
 
   return (
-    <div>
-      <Nav openNav={showNavHadler} />
+    <ThemeProvider>
+      <Nav openNav={showNavHandler} />
+      
       <MobileNav showNav={showNav} closeNav={closeNavHandler} />
-    </div>
+    </ThemeProvider>
   );
 };
 

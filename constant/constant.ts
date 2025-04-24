@@ -4,6 +4,7 @@ export const navLinks = [
     url: "/",
     label: "Home",
   },
+
   {
     id: 2,
     url: "/about",
