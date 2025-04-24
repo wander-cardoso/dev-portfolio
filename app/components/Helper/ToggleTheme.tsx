@@ -8,11 +8,11 @@ const ToggleTheme = () => {
   return (
     <div>
     {theme === "dark" ? (
-      <button onClick={toggleTheme} className="h-10 text-yellow-300 hover:text-yellow-200 cursor-pointer">
+      <button onClick={toggleTheme} className=" w-full text-yellow-300 hover:text-yellow-200 cursor-pointer">
         <FaSun />
       </button>
     ) : (
-      <button onClick={toggleTheme} className="h-10 text-cyan-700 hover:text-cyan-200 cursor-pointer  ">
+      <button onClick={toggleTheme} className=" text-emerald-700 hover:text-emerald-300 cursor-pointer  ">
         <FaMoon />
       </button>
     )}
