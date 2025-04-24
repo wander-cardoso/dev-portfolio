@@ -24,8 +24,7 @@ const Footer = () => {
       >
         {navLinks.map((navlink) => {
           return (
-            <Link key={navlink.id} href={navlink.url}
-            className="nav__link">
+            <Link key={navlink.id} href={navlink.url} className="nav__link">
               <p>{navlink.label}</p>
             </Link>
           );

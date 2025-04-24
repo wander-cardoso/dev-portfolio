@@ -3,7 +3,6 @@ import Link from "next/link";
 import React from "react";
 import { CgClose } from "react-icons/cg";
 
-
 // define props type
 type Props = {
   showNav: boolean;
@@ -16,7 +15,8 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
   return (
     <div>
       {/* overlay */}
-      <div onClick={closeNav}
+      <div
+        onClick={closeNav}
         className={`fixed ${navOpen} transform transition-all duration-500 inset-0 z-[100] bg-black opacity-70 w-full h-screen`}
       ></div>
       {/* nav links*/}

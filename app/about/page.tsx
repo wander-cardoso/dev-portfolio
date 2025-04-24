@@ -6,16 +6,16 @@ import SectionHeading from "../components/Helper/SectionHeading";
 
 const About = () => {
   return (
-    <div className=" pt-16 pb-16 
-    " style={{
-      backgroundColor: "var(--bg-tertiary)",
-      color: "var(--text-primary)",
-      }}>
+    <div
+      className=" pt-16 pb-16 
+    "
+      style={{
+        backgroundColor: "var(--bg-tertiary)",
+        color: "var(--text-primary)",
+      }}
+    >
       <SectionHeading>About Me</SectionHeading>
-      <div
-        className="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-20"
-        
-      >
+      <div className="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-20">
         {/*text content*/}
         <div>
           <div data-aos="fade-right" data-aos-delay="200">
@@ -26,37 +26,28 @@ const About = () => {
               {aboutInfo.description}
             </p>
             {/* check out my skills*/}
-            <div className="mt-8"
-            >
+            <div className="mt-8">
               <div className="style_checkbox">
                 <div className="checkbox bg-blue-800">
                   <FaCheck />
                 </div>
-                <p className="checkbox_text">
-                  Front-End Development
-                </p>
+                <p className="checkbox_text">Front-End Development</p>
               </div>
             </div>
-            <div className="mt-8" 
-          
-            >
+            <div className="mt-8">
               <div className="style_checkbox">
                 <div className=" checkbox bg-orange-800 ">
-                  <FaCheck  />
+                  <FaCheck />
                 </div>
-                <p className="checkbox_text">
-                  Back-End Development
-                </p>
+                <p className="checkbox_text">Back-End Development</p>
               </div>
             </div>
             <div className="mt-8">
               <div className="style_checkbox">
                 <div className="checkbox bg-green-800">
-                  <FaCheck  />
+                  <FaCheck />
                 </div>
-                <p className="checkbox_text ">
-                  Full-Stack Development
-                </p>
+                <p className="checkbox_text ">Full-Stack Development</p>
               </div>
             </div>
             {/*Stats content*/}

@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 
@@ -13,13 +15,16 @@ type Props = {
 const SkillCard = ({ skill }: Props) => {
   const { image, title, percent } = skill;
   return (
-    <div data-aos="flip-left" data-aos-delay="100" className="skill__card"
-    onMouseOver={(e) =>
-      (e.currentTarget.style.backgroundColor = "var(--bg-skill-hover)")
-    }
-    onMouseOut={(e) =>
-      (e.currentTarget.style.backgroundColor = "var(--bg-skill)")
-    }
+    <div
+      data-aos="flip-left"
+      data-aos-delay="100"
+      className="skill__card"
+      onMouseOver={(e) =>
+        (e.currentTarget.style.backgroundColor = "var(--bg-skill-hover)")
+      }
+      onMouseOut={(e) =>
+        (e.currentTarget.style.backgroundColor = "var(--bg-skill)")
+      }
     >
       <Image
         src={image}

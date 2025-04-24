@@ -9,11 +9,11 @@ export const BaseInfo = {
 
 export const aboutInfo = {
   title: "Crafting Web Applications with Passion and Precision",
-description: "I am constantly seeking new knowledge, challenges, and opportunities for growth. My focus is on developing tailored solutions that meet each client's specific needs, always with close attention to detail and code quality.",
-experience: "2+ Years of Study",
-projects: "10+ Projects",
-client: "Complete Client Satisfaction",
-
+  description:
+    "I am constantly seeking new knowledge, challenges, and opportunities for growth. My focus is on developing tailored solutions that meet each client's specific needs, always with close attention to detail and code quality.",
+  experience: "2+ Years of Study",
+  projects: "10+ Projects",
+  client: "Complete Client Satisfaction",
 };
 
 export const projectData = [
@@ -63,7 +63,6 @@ export const projectData = [
     icon: "/images/lista-de-compras.png",
     url: "https://lista-de-compras-wheat-eta.vercel.app/",
   },
-  
 ];
 
 export const skillsData = [
@@ -116,15 +115,13 @@ export const skillsData = [
     image: "/images/node.svg",
     percent: "75%",
   },
-  
+
   {
     id: 9,
     title: "Python",
     image: "/images/python.svg",
     percent: "35%",
   },
- 
-  
 ];
 
 export const contactData = {

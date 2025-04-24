@@ -9,10 +9,6 @@ import Contact from "../../contact/page";
 import "aos/dist/aos.css";
 import Aos from "aos";
 
-
-
-
-
 const Home = () => {
   useEffect(() => {
     const initAOS = async () => {

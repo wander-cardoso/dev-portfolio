@@ -16,7 +16,9 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   // Inicializa tema com base no localStorage ou sistema
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme") as Theme | null;
-    const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const systemPrefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)",
+    ).matches;
     const defaultTheme = storedTheme || (systemPrefersDark ? "dark" : "light");
     setTheme(defaultTheme);
   }, []);

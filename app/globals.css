@@ -79,7 +79,6 @@ html.dark {
       to right,
       var(--accent__one),
       var(--text-primary)
-      
     );
     background-clip: text;
     -webkit-background-clip: text;
