@@ -10,7 +10,7 @@ const ToggleTheme = () => {
       {theme === "dark" ? (
         <button
           onClick={toggleTheme}
-          className=" text-2xl  text-yellow-300 hover:text-yellow-200 cursor-pointer"
+          className=" text-4xl  text-yellow-300 hover:text-yellow-200 cursor-pointer"
         >
           <FaSun />
         </button>
