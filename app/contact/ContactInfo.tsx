@@ -7,12 +7,12 @@ const ContactInfo = () => {
     <div>
       <a href="tel:+351932748700" target="_blank" rel="noopener noreferrer">
         <div className="flex items-center space-x-8">
-          <div className="w-14 h-14  rounded-full bg-gradient-to-r from-emerald-700 to-emerald-950 flex items-center justify-center flex-col">
-            <FaPhone className=" w-6 h-6 text-white " />
+          <div className="contact__link_icon">
+            <FaPhone className=" contact__link_text " />
           </div>
           <div>
-            <h1 className="tx-lg sm:text-xl text-textprimary">Phone</h1>
-            <h1 className=" text-base sm:text-lg text-textprimary text-opacity-70">
+            <h1 className="tx-lg sm:text-xl ">Phone</h1>
+            <h1 className=" text-base sm:text-lg  text-opacity-70">
               {contactData.Telemovel}
             </h1>
           </div>
@@ -25,14 +25,12 @@ const ContactInfo = () => {
         rel="noopener noreferrer"
       >
         <div className="flex items-center space-x-8 my-8">
-          <div className="w-14 h-14  rounded-full bg-gradient-to-r from-emerald-700 to-emerald-950 flex items-center justify-center flex-col">
-            <FaEnvelope className=" w-6 h-6 text-white " />
+          <div className="contact__link_icon">
+            <FaEnvelope className=" contact__link_text " />
           </div>
           <div>
-            <h1 className="tx-lg sm:text-xl text-textprimary">
-              E-mail Address
-            </h1>
-            <h1 className=" text-base sm:text-lg text-textprimary text-opacity-70">
+            <h1 className="tx-lg sm:text-xl ">E-mail Address</h1>
+            <h1 className=" text-base sm:text-lg  text-opacity-70">
               {contactData.Email}
             </h1>
           </div>
@@ -45,12 +43,12 @@ const ContactInfo = () => {
         rel="noopener noreferrer"
       >
         <div className="flex items-center space-x-8">
-          <div className="w-14 h-14 rounded-full bg-gradient-to-r from-emerald-700 to-emerald-950 flex items-center justify-center flex-col">
-            <FaMap className="w-6 h-6 text-white" />
+          <div className="contact__link_icon">
+            <FaMap className="contact__link_text" />
           </div>
           <div>
-            <h1 className="text-lg sm:text-xl text-textprimary">Address</h1>
-            <h1 className="text-base sm:text-lg text-textprimary text-opacity-70">
+            <h1 className="text-lg sm:text-xl ">Address</h1>
+            <h1 className="text-base sm:text-lg  text-opacity-70">
               {contactData.Endereço}
             </h1>
           </div>

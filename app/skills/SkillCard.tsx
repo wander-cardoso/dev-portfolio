@@ -13,10 +13,13 @@ type Props = {
 const SkillCard = ({ skill }: Props) => {
   const { image, title, percent } = skill;
   return (
-    <div
-      data-aos="flip-left"
-      data-aos-delay="100"
-      className="p-6 hover:bg-emerald-800 duration-300 grid grid-cols-2 transition-all  items-center cursor-pointer text-center h-60 rounded-lg bg-bgemerald"
+    <div data-aos="flip-left" data-aos-delay="100" className="skill__card"
+    onMouseOver={(e) =>
+      (e.currentTarget.style.backgroundColor = "var(--bg-skill-hover)")
+    }
+    onMouseOut={(e) =>
+      (e.currentTarget.style.backgroundColor = "var(--bg-skill)")
+    }
     >
       <Image
         src={image}
@@ -28,7 +31,7 @@ const SkillCard = ({ skill }: Props) => {
       <h1 className="text-[1.125rem] mt-4 text-textprimary font-[600]">
         {title}
       </h1>
-      <div className="bg-bgblack mt-4 rounded-lg col-span-2 p-2 text-textprimary opacity-40">
+      <div className="bg-black mt-4 rounded-lg col-span-2 p-2 text-white opacity-40">
         {percent}
       </div>
     </div>

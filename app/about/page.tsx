@@ -6,9 +6,16 @@ import SectionHeading from "../components/Helper/SectionHeading";
 
 const About = () => {
   return (
-    <div className=" pt-16 pb-16 bg-black">
+    <div className=" pt-16 pb-16 
+    " style={{
+      backgroundColor: "var(--bg-tertiary)",
+      color: "var(--text-primary)",
+      }}>
       <SectionHeading>About Me</SectionHeading>
-      <div className="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-20">
+      <div
+        className="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-20"
+        
+      >
         {/*text content*/}
         <div>
           <div data-aos="fade-right" data-aos-delay="200">
@@ -19,32 +26,35 @@ const About = () => {
               {aboutInfo.description}
             </p>
             {/* check out my skills*/}
-            <div className="mt-8">
-              <div className="flex items-center space-x-2 mb-6">
+            <div className="mt-8"
+            >
+              <div className="style_checkbox">
                 <div className="checkbox bg-blue-800">
-                  <FaCheck className="text-textprimary" />
+                  <FaCheck />
                 </div>
-                <p className="text-sm sm:text-base md:text-lg font-bold text-gray-300">
+                <p className="checkbox_text">
                   Front-End Development
                 </p>
               </div>
             </div>
-            <div className="mt-8">
-              <div className="flex items-center space-x-2 mb-6">
+            <div className="mt-8" 
+          
+            >
+              <div className="style_checkbox">
                 <div className=" checkbox bg-orange-800 ">
-                  <FaCheck className="text-textprimary" />
+                  <FaCheck  />
                 </div>
-                <p className="text-sm sm:text-base md:text-lg font-bold text-gray-300">
+                <p className="checkbox_text">
                   Back-End Development
                 </p>
               </div>
             </div>
             <div className="mt-8">
-              <div className="flex items-center space-x-2 mb-6">
+              <div className="style_checkbox">
                 <div className="checkbox bg-green-800">
-                  <FaCheck className="text-textprimary" />
+                  <FaCheck  />
                 </div>
-                <p className="text-sm sm:text-base md:text-lg font-bold text-gray-300">
+                <p className="checkbox_text ">
                   Full-Stack Development
                 </p>
               </div>

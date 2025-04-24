@@ -7,27 +7,41 @@
   --bg-primary: #e5e5e5;
   --bg-secondary: #79716b;
   --bg-tertiary: #d6d3d1;
-  --text-primary: #000000;
+  --bg-skill: #ffffff;
+  --bg-skill-hover: #e5e5e5;
+  --bg-mobile: #d6d3d1;
+  --bg-accent: #032e15;
+  --bg-text: #d6d3d1;
+  --text-primary: #006045;
   --text-secondary: #18181b;
-  --accent: #032e15;
+  --text-mobile: #000000;
+  --accent__one: #032e15;
   --button-bg: #d6d3d1;
   --button-bg-hover: #a1a1a1;
   --button-text: #ffffff;
   --border-color: #d6d3d1;
+  --accent: #000000;
 }
 
 html.dark {
   /* escuro */
   --bg-primary: #020618;
   --bg-secondary: #065f46;
-  --bg-tertiary: #020618;
+  --bg-tertiary: #000000;
+  --bg-skill: #002c22;
+  --bg-skill-hover: #064e3b;
+  --bg-mobile: #002c22;
+  --bg-accent: #032e15;
+  --bg-text: #032e15;
   --text-primary: #ffffff;
   --text-secondary: #d1d5db;
-  --accent: #032e15;
-  --button-bg: #032e15;
+  --text-mobile: #ffffff;
+  --accent__one: #032e15;
+  --button-bg: #002c22;
   --button-bg-hover: #065f46;
   --button-text: #ffffff;
   --border-color: #032e15;
+  --accent: #ffffff;
 }
 
 @layer components {
@@ -38,23 +52,45 @@ html.dark {
 
   .onsubmit {
     background-color: var(--bg-secondary);
-    color: var(--text-primary);
+    color: var(--text-secondary);
     border-color: var(--accent);
-    @apply flex-1 placeholder:text-gray-600 px-6 py-3 rounded-md border outline-none w-full;
+    @apply flex-1 placeholder:text-gray-300 hover:bg-emerald-200/10 px-6 py-3 rounded-md border outline-none w-full;
   }
 
+  .skill__card {
+    background-color: var(--bg-skill);
+    color: var(--text-secondary);
+    @apply p-6 duration-300 grid grid-cols-2 transition-all items-center cursor-pointer text-center h-60 rounded-lg;
+  }
   .checkbox {
     @apply w-7 h-7 flex flex-col items-center justify-center;
+  }
+
+  .checkbox_text {
+    @apply text-sm sm:text-base md:text-lg font-bold;
+  }
+
+  .style_checkbox {
+    @apply flex items-center space-x-2 mb-6;
   }
 
   .text-bg {
     background-image: linear-gradient(
       to right,
-      var(--accent),
+      var(--accent__one),
       var(--text-primary)
+      
     );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .contact__link_icon {
+    @apply w-14 h-14  rounded-full bg-gradient-to-r from-emerald-700 to-emerald-950 flex items-center justify-center flex-col;
+  }
+
+  .contact__link_text {
+    @apply w-6 h-6 text-white;
   }
 }

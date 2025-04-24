@@ -8,18 +8,18 @@ export const navLinks = [
   {
     id: 2,
     url: "/about",
-    label: "Sobre-mim",
+    label: "About-me",
   },
 
   {
     id: 3,
     url: "project",
-    label: "Projetos",
+    label: "Projects",
   },
 
   {
     id: 4,
     url: "/contact",
-    label: "Contatos",
+    label: "Contact",
   }
 ];

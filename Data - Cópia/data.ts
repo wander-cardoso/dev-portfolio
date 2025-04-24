@@ -2,68 +2,66 @@ export const BaseInfo = {
   name: "Wander Cardoso",
   position: "Full-Stack Developer",
   description:
-    "I am a Full-Stack Developer with a strong passion for technology and a commitment to delivering customized solutions for applications, systems, and websites. By combining creativity with technical expertise, I support businesses in enhancing their online presence and achieving their strategic objectives.",
+    "Sou desenvolvedor Full-Stack, apaixonado pela tecnologia e comprometido á entregar soluções personalizadas para Aplicações, Sistemas e Web-Sites. Com uma mistura de criatividade e conhecimento técnico, ajudo as empresas a elevar sua presença online e atingir seus objetivos!",
   profilePic:
     "https://media.licdn.com/dms/image/v2/D4D03AQGtcXbWYhHYQA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1714042109702?e=1749686400&v=beta&t=O_5-JSvqTDsMhCHO-yz9Dp8-DIf9XGTZLRFHDof-vFU",
 };
 
 export const aboutInfo = {
-  title: "Crafting Web Applications with Passion and Precision",
-description: "I am constantly seeking new knowledge, challenges, and opportunities for growth. My focus is on developing tailored solutions that meet each client's specific needs, always with close attention to detail and code quality.",
-experience: "2+ Years of Study",
-projects: "10+ Projects",
-client: "Complete Client Satisfaction",
-
+  title: "Criação de aplicações web com paixão e precisão",
+  description: "Estou sempre em busca novos conhecimentos, desafios e oportunidades de crescimento. Meu foco é criar soluções personalizadas que atendam às necessidades específicas de cada cliente, sempre com atenção aos detalhes e à qualidade do código.",
+  experience: "2+ Estudos",
+  projects: "10+ Projetos",
+  client: "Satisfação total dos clientes",
 };
 
 export const projectData = [
   {
     id: 1,
-    title: "Number Picker",
+    title: "Sorteador de Números",
     description:
-      "Ready to draw some numbers? This app makes your game more dynamic, simple, and fair when picking random numbers.",
+      "Vamos sortear os números? Essa aplicação vai interagir na sua brincadeira, deixando dinâmico, simples e justo o sorteio dos números.",
     icon: "/images/sorteador-numeros.png",
     url: "https://sorteador-numeros-pearl.vercel.app/",
   },
   {
     id: 2,
-    title: "FSW-MCDonalds App",
+    title: "App FSW-MCDonalds",
     description:
-      "An identical app inspired by McDonald's, suitable for any fast-food business.",
+      "Aplicação idêntica inspirada no MCDonalds para qualquer loja de Fast-food.",
     icon: "/images/fswdonalds.png",
     url: "https://wanderappdonalds.vercel.app/fsw-donalds",
   },
   {
     id: 3,
     title: "Meteora E-commerce",
-    description: "A complete store for clothing and accessories.",
+    description: "Uma loja completa em roupas e acessórios.",
     icon: "/images/siteljmeteora.png",
     url: "https://projeto-meteora-ecommerce.vercel.app/",
   },
   {
     id: 4,
-    title: "Secret Santa",
-    description: "A great way to randomly draw names for a Secret Santa game.",
+    title: "Amigo Secreto",
+    description: "Uma Boa forma de sortear nomes de forma aleatória.",
     icon: "/images/amigo-secreto.png",
     url: "https://amigo-secreto-ten-sigma.vercel.app/",
   },
   {
     id: 5,
-    title: "Buy Ticket",
+    title: "Compre Ticket",
     description:
-      "A site dedicated to event organizers who want a practical and secure way to manage ticket sales.",
+      "Site dedicado a eventos que disponibilizem tickets para venda, ao qual deseja controlar de forma prática e segura as vendas.",
     icon: "/images/compre-ticket.png",
     url: "https://compre-ingresso.vercel.app/",
   },
   {
     id: 6,
-    title: "Shopping List",
+    title: "Lista de Compras",
     description:
-      "A very useful app for all users to assist with shopping, helping with organization, saving money, and ensuring you don’t forget any items.",
+      "Aplicação muito útil, para qualquer perfil de usuário, para auxiliar nas compras, facilitando a vida na organização, economizando no seu bolso e ainda não te deixa esquecer de nenhum intem.",
     icon: "/images/lista-de-compras.png",
     url: "https://lista-de-compras-wheat-eta.vercel.app/",
   },
-  
 ];
 
 export const skillsData = [

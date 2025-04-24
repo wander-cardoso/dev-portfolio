@@ -59,7 +59,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div id="contact" className="bg-black/50 rounded-lg p-4 m-10 w-auto">
+    <div id="contact" className="bg-black/20 rounded-lg p-4 m-10 w-auto">
       <h1 className="text-bg text-2xl md:text-3xl lg:text-[2.5rem] font-bold">
         Let's Work Together?
       </h1>
@@ -106,7 +106,12 @@ const ContactForm = () => {
         <div>
           <select
             name="service"
-            className="w-full mt-5 bg-black text-textprimary px-4 py-3.5 rounded-md border border-gray-700 outline-none"
+            className="w-full mt-5  px-4 py-3.5 rounded-md  outline-none"
+            style={{
+              backgroundColor: "var(--bg-primary)",
+              color: "var(--text-secondary)",
+              border: "1.5px solid var(--accent)",
+            }}
           >
             <option value="" disabled selected>
               Select a service
@@ -120,17 +125,18 @@ const ContactForm = () => {
         <textarea
           name="message"
           rows={7}
-          placeholder="Your message"
+          placeholder="Your message! 😁"
           required
-          className="w-full mt-5 bg-black text-textprimary px-4 py-3.5 rounded-md border border-gray-700 outline-none"
+          className="w-full mt-5 px-4 py-3.5 rounded-md border  outline-none"
+          style={{
+            backgroundColor: "var(--bg-primary)",
+            color: "var(--text-secondary)",
+            border: "1.5px solid var(--accent)",
+          }}
         ></textarea>
 
         <div className="mt-4 flex flex-col gap-2">
-          <button
-            type="submit"
-            disabled={isLoading}
-            className="px-8 py-3.5 bg-bgemerald hover:bg-emerald-800 transition-all duration-150 rounded-full text-textprimary flex items-center justify-center gap-2"
-          >
+          <button type="submit" disabled={isLoading} className="onsubmit">
             {isLoading ? (
               <>
                 <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
@@ -140,7 +146,15 @@ const ContactForm = () => {
               "Send Message"
             )}
           </button>
-          <p className="text-textprimary text-base">{result}</p>
+          <p
+            className="text-textprimary rounded-md text-center text-base"
+            style={{
+              backgroundColor: "var(--bg-primary)",
+              color: "var(--text-secondary)",
+            }}
+          >
+            {result}
+          </p>
         </div>
       </form>
     </div>

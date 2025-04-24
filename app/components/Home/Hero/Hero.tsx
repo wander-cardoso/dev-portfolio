@@ -29,7 +29,6 @@ const Hero = () => {
               data-aos="fade-up"
               data-aos-delay="100"
               className="text-bg text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold md:leading-[3rem] lg:leading-[3.5rem] xl:leading-[4rem]"
-              style={{ color: "var(--text-primary)" }}
             >
               {BaseInfo.position}
             </h1>
