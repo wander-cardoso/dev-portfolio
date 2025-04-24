@@ -4,7 +4,7 @@ import "./globals.css";
 import ResponsiveNav from "./components/Home/Navbar/ResponsiveNav";
 import Footer from "./components/Home/Footer/Footer";
 import ScrollToTop from "./components/Helper/ScrollToTop";
-import { ThemeProvider } from "./components/Helper/ThemeProvider";
+
 
 
 const font = Sora({

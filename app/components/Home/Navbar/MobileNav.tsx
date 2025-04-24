@@ -2,7 +2,7 @@ import { navLinks } from "@/constant/constant";
 import Link from "next/link";
 import React from "react";
 import { CgClose } from "react-icons/cg";
-import ToggleTheme from "../../Helper/ToggleTheme";
+
 
 // define props type
 type Props = {
