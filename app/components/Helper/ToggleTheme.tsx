@@ -17,7 +17,7 @@ const ToggleTheme = () => {
       ) : (
         <button
           onClick={toggleTheme}
-          className="text-2xl  text-emerald-700 hover:text-emerald-500 cursor-pointer  "
+          className="text-4xl xl:text-3xl  text-emerald-700 hover:text-emerald-500 cursor-pointer  "
         >
           <FaMoon />
         </button>

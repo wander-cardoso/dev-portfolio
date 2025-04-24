@@ -38,7 +38,7 @@ const Nav = ({ openNav }: Props) => {
       style={{
         backgroundColor: "var(--bg-mobile",
       }}
-      className={`" fixed ${navBg ? " h-11" : "var(--bg-primary)"} h-[12vh] z-[10]  w-full  transition-all duration-200 `}
+      className={`" fixed ${navBg ? " h-11" : "var(--bg-primary)"} h-[10vh] z-[10]  w-full  transition-all duration-200 `}
     >
       <div className="flex items-center h-full justify-between  w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
         {/* Logo Section */}
@@ -70,7 +70,7 @@ const Nav = ({ openNav }: Props) => {
               </button>
             </Link>
             <div
-              className="flex gap-3 justify-end text-2xl  items-end "
+              className="flex gap-8 px-10 justify-end text-4xl  items-end "
               style={{
                 color: "var(--text-mobile)",
               }}

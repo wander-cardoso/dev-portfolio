@@ -6,7 +6,7 @@ import { FaDownload } from "react-icons/fa";
 const Hero = () => {
   return (
     <div
-      className="w-full pt-[4vh] md:pt-[6vh] h-full overflow-hidden"
+      className="w-full pt-[10vh] h-full overflow-hidden"
       style={{
         backgroundColor: "var(--bg-primary)",
         color: "var(--text-primary)",
