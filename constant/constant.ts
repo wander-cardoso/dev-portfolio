@@ -7,19 +7,19 @@ export const navLinks = [
 
   {
     id: 2,
-    url: "/about",
+    url: "/pages/about",
     label: "About-me",
   },
 
   {
     id: 3,
-    url: "project",
+    url: "/pages/projects",
     label: "Projects",
   },
 
   {
     id: 4,
-    url: "/contact",
+    url: "/pages/contact",
     label: "Contact",
   },
 ];

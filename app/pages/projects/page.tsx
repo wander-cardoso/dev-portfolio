@@ -1,9 +1,9 @@
 import { projectData } from "@/Data/data";
 import React from "react";
 import ProjectCard from "./ProjectsCard";
-import SectionHeading from "../components/Helper/SectionHeading";
+import SectionHeading from "../../components/Helper/SectionHeading";
 
-const Project = () => {
+const Projects = () => {
   return (
     <div
       className="pt-16 pb-16"
@@ -31,4 +31,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default Projects;

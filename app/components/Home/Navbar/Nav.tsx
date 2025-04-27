@@ -38,7 +38,7 @@ const Nav = ({ openNav }: Props) => {
       style={{
         backgroundColor: "var(--bg-mobile",
       }}
-      className={`" fixed ${navBg ? " h-11" : "var(--bg-primary)"} h-[10vh] z-[10]  w-full  transition-all duration-200 `}
+      className={`" fixed ${navBg ? " h-12" : "var(--bg-primary)"} h-[10vh] z-[10]  w-full  transition-all duration-200 `}
     >
       <div className="flex items-center h-full justify-between  w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
         {/* Logo Section */}
@@ -64,7 +64,7 @@ const Nav = ({ openNav }: Props) => {
           </div>
           {/* Button*/}
           <div className="flex items-center space-x-4">
-            <Link href="/contact">
+            <Link href="/pages/contact">
               <button className="md:px-10 md:py-2 px-5 py-2 text-green-900 fonts-semibold sm:text-base text-sm bg-white hover:bg-gray-200 hover:text-slate-900 transition-all duration-200 rounded-lg">
                 Hire Me!
               </button>

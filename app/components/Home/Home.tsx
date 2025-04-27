@@ -1,11 +1,11 @@
 "use client";
 
 import React, { useEffect } from "react";
-import Hero from "./Hero/Hero";
-import About from "../../about/page";
-import Services from "../../project/page";
-import Skills from "../../skills/page";
-import Contact from "../../contact/page";
+import Hero from "./Hero/Hero";;
+import About from "@/app/pages/about/page";
+import Projects from "@/app/pages/projects/page";
+import Skills from "@/app/pages/skills/page";
+import Contact from "@/app/pages/contact/page";
 import "aos/dist/aos.css";
 import Aos from "aos";
 
@@ -26,7 +26,7 @@ const Home = () => {
     <div className="overflow-hidden">
       <Hero />
       <About />
-      <Services />
+      <Projects />
       <Skills />
       <Contact />
     </div>

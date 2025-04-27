@@ -3,7 +3,7 @@
 import { skillsData } from "@/Data/data";
 import React from "react";
 import SkillCard from "./SkillCard";
-import SectionHeading from "../components/Helper/SectionHeading";
+import SectionHeading from "../../components/Helper/SectionHeading";
 
 const Skills = () => {
   return (

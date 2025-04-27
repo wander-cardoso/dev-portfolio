@@ -1,10 +1,13 @@
-import { aboutInfo } from "@/Data/data";
+import SectionHeading from "@/app/components/Helper/SectionHeading";
+
 import Image from "next/image";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { FaCheck } from "react-icons/fa";
-import SectionHeading from "../components/Helper/SectionHeading";
+
 
 const About = () => {
+   const { t } = useTranslation();
   return (
     <div
       className=" pt-16 pb-16 
@@ -20,10 +23,10 @@ const About = () => {
         <div>
           <div data-aos="fade-right" data-aos-delay="200">
             <h1 className="text-bg text-[26px] sm:text-3xl md:text-4xl lg:text-5xl font-bold  ">
-              {aboutInfo.title}
+              {t('aboutInfo.title')}
             </h1>
             <p className="mt-6 text-base text-gray-500">
-              {aboutInfo.description}
+              {t('aboutInfo.description')}
             </p>
             {/* check out my skills*/}
             <div className="mt-8">
@@ -68,7 +71,7 @@ const About = () => {
               className="mx-auto"
             />
             <p className="text-gray-500 text-center text-sm mt-3 font-bold">
-              {aboutInfo.client}
+              {t('aboutInfo.client')}
             </p>
           </div>
           <div>
@@ -81,7 +84,7 @@ const About = () => {
               className="mx-auto"
             />
             <p className="text-gray-500 text-center text-sm mt-3 font-bold">
-              {aboutInfo.experience}
+              {t('aboutInfo.experience')}
             </p>
           </div>
           <div className="mx-auto items-center col-span-2">
@@ -94,7 +97,7 @@ const About = () => {
               className="mx-auto items-center col-span-2"
             />
             <p className="text-gray-500 text-center text-sm mt-3 font-bold">
-              {aboutInfo.projects}
+              
             </p>
           </div>
         </div>
