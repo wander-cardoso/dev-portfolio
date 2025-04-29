@@ -41,13 +41,5 @@ Clique aqui para acessar 👉 [dev-portifyle.vercel.app](https://dev-portifyle.v
 
 ---
 
-## 💻 Rodar Localmente
-
-```bash
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
-cd nome-do-repositorio
-npm install
-npm run dev
-
 ![](./public/images/portify.png)
 ```
