@@ -22,7 +22,7 @@ const ProjectCard = ({ project }: Props) => {
       <div
         style={{
           backgroundColor: "var(--button-bg)",
-          color: "var(--text-primary)",
+          color: "var(--text-tertiary)",
         }}
         onMouseOver={(e) =>
           (e.currentTarget.style.backgroundColor = "var(--button-bg-hover)")
@@ -30,25 +30,28 @@ const ProjectCard = ({ project }: Props) => {
         onMouseOut={(e) =>
           (e.currentTarget.style.backgroundColor = "var(--button-bg)")
         }
-        className="h-full w-full justify-bottom"
+        className="h-full w-full flex flex-col items-center align-self-end"
       >
         <Link
           href={project.url}
           target="_blank"
-          className="flex flex-col items-center"
         >
           <Image
             src={project.icon}
             alt={project.title}
-            width={120}
-            height={120}
-            className="w-30 mt-4"
+            width={150}
+            height={150}
+            className=" mt-4 "
           />
         </Link>
-        <h1 className="mt-4 text-lg font-bold text-center ">{project.title}</h1>
-        <p className="mt-3  text-sm text-opacity-80 flex al text-justify  p-2 ">
-          {project.description}
-        </p>
+        <div className="h-full flex flex-col  ">
+          <h1 className="mt-5 text-lg font-bold h-full text-center ">
+            {project.title}
+          </h1>
+          <p className="  text-md text-justify  p-2 inline-block align-bottom ">
+            {project.description}
+          </p>
+        </div>
       </div>
     </Tilt>
   );

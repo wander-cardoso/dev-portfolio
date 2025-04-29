@@ -14,6 +14,7 @@
   --bg-text: #d6d3d1;
   --text-primary: #006045;
   --text-secondary: #18181b;
+  --text-tertiary:  #292524;
   --text-mobile: #000000;
   --accent__one: #032e15;
   --button-bg: #d6d3d1;
@@ -35,6 +36,7 @@ html.dark {
   --bg-text: #032e15;
   --text-primary: #ffffff;
   --text-secondary: #d1d5db;
+  --text-tertiary:  #ffffff;
   --text-mobile: #ffffff;
   --accent__one: #032e15;
   --button-bg: #002c22;
