@@ -32,10 +32,7 @@ const ProjectCard = ({ project }: Props) => {
         }
         className="h-full w-full flex flex-col items-center align-self-end"
       >
-        <Link
-          href={project.url}
-          target="_blank"
-        >
+        <Link href={project.url} target="_blank">
           <Image
             src={project.icon}
             alt={project.title}
