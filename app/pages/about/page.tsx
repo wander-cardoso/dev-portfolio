@@ -3,15 +3,12 @@ import { aboutInfo } from "@/Data/data";
 
 import Image from "next/image";
 import React from "react";
-import { useTranslation } from "react-i18next";
 import { FaCheck } from "react-icons/fa";
 
 const About = () => {
-  const { t } = useTranslation();
   return (
     <div
-      className=" pt-16 pb-16 
-    "
+      className="pt-16 pb-16"
       style={{
         backgroundColor: "var(--bg-tertiary)",
         color: "var(--text-primary)",
