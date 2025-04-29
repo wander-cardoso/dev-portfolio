@@ -14,7 +14,7 @@ const Skills = () => {
         color: "var(--text-primary)",
       }}
     >
-      <SectionHeading> Minhas Habilidades </SectionHeading>
+      <SectionHeading> My Skills </SectionHeading>
       <div className="mt--20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 w-[90%] mx-auto items-center mt-20">
         {skillsData.map((skill) => {
           return (

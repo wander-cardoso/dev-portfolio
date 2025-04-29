@@ -30,7 +30,7 @@ const ProjectCard = ({ project }: Props) => {
         onMouseOut={(e) =>
           (e.currentTarget.style.backgroundColor = "var(--button-bg)")
         }
-        className="h-full w-full"
+        className="h-full w-full justify-bottom"
       >
         <Link
           href={project.url}
@@ -46,7 +46,7 @@ const ProjectCard = ({ project }: Props) => {
           />
         </Link>
         <h1 className="mt-4 text-lg font-bold text-center ">{project.title}</h1>
-        <p className="mt-3 text-sm text-opacity-80 text-justify p-2 font-sans">
+        <p className="mt-3  text-sm text-opacity-80 flex al text-justify  p-2 ">
           {project.description}
         </p>
       </div>

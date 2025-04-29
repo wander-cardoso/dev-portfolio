@@ -1,4 +1,5 @@
 import SectionHeading from "@/app/components/Helper/SectionHeading";
+import { aboutInfo } from "@/Data/data";
 
 import Image from "next/image";
 import React from "react";
@@ -23,10 +24,10 @@ const About = () => {
         <div>
           <div data-aos="fade-right" data-aos-delay="200">
             <h1 className="text-bg text-[26px] sm:text-3xl md:text-4xl lg:text-5xl font-bold  ">
-              {t('aboutInfo.title')}
+              {aboutInfo.title}
             </h1>
             <p className="mt-6 text-base text-gray-500">
-              {t('aboutInfo.description')}
+              {aboutInfo.description}
             </p>
             {/* check out my skills*/}
             <div className="mt-8">

@@ -17,7 +17,7 @@ const Footer = () => {
         </Link>
       </div>
       <div
-        className="xl:flex items-end justify-between mx-16 space-y-4  font-bold hidden "
+        className="xl:flex items-end justify-around mx-40 space-y-4  font-bold hidden "
         style={{
           color: "var(--text-primary)",
         }}
