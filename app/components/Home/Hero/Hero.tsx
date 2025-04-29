@@ -22,7 +22,7 @@ const Hero = () => {
               className="text-2xl md:text-3xl lg:text-4xl my-5 font-semibold t"
               style={{ color: "var(--text-secondary)" }}
             >
-              Hi There 👋🏼 <br /> I'm <strong>{BaseInfo.name}.</strong>
+              Hi There 👋🏼 <br /> I&#39m <strong>{BaseInfo.name}.</strong>
             </h1>
 
             <h1
