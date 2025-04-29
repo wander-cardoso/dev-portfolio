@@ -6,9 +6,8 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { FaCheck } from "react-icons/fa";
 
-
 const About = () => {
-   const { t } = useTranslation();
+  const { t } = useTranslation();
   return (
     <div
       className=" pt-16 pb-16 
@@ -72,7 +71,7 @@ const About = () => {
               className="mx-auto"
             />
             <p className="text-gray-500 text-center text-sm mt-3 font-bold">
-              {t('aboutInfo.client')}
+              {aboutInfo.client}
             </p>
           </div>
           <div>
@@ -85,7 +84,7 @@ const About = () => {
               className="mx-auto"
             />
             <p className="text-gray-500 text-center text-sm mt-3 font-bold">
-              {t('aboutInfo.experience')}
+              {aboutInfo.experience}
             </p>
           </div>
           <div className="mx-auto items-center col-span-2">
@@ -98,7 +97,7 @@ const About = () => {
               className="mx-auto items-center col-span-2"
             />
             <p className="text-gray-500 text-center text-sm mt-3 font-bold">
-              
+              {aboutInfo.projects}
             </p>
           </div>
         </div>
