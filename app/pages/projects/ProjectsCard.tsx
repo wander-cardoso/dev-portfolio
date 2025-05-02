@@ -19,20 +19,20 @@ type Props = {
 const ProjectCard = ({ project }: Props) => {
   return (
     <Tilt className=" rounded-lg cursor-pointer overflow-hidden shadow-lg hover:shadow-green-900 h-64">
-      <div
-        style={{
-          backgroundColor: "var(--button-bg)",
-          color: "var(--text-tertiary)",
-        }}
-        onMouseOver={(e) =>
-          (e.currentTarget.style.backgroundColor = "var(--button-bg-hover)")
-        }
-        onMouseOut={(e) =>
-          (e.currentTarget.style.backgroundColor = "var(--button-bg)")
-        }
-        className="h-full w-full flex flex-col items-center align-self-end"
-      >
-        <Link href={project.url} target="_blank">
+      <Link href={project.url} target="_blank">
+        <div
+          style={{
+            backgroundColor: "var(--button-bg)",
+            color: "var(--text-tertiary)",
+          }}
+          onMouseOver={(e) =>
+            (e.currentTarget.style.backgroundColor = "var(--button-bg-hover)")
+          }
+          onMouseOut={(e) =>
+            (e.currentTarget.style.backgroundColor = "var(--button-bg)")
+          }
+          className="h-full w-full flex flex-col items-center align-self-end"
+        >
           <Image
             src={project.icon}
             alt={project.title}
@@ -40,16 +40,17 @@ const ProjectCard = ({ project }: Props) => {
             height={150}
             className=" mt-4 "
           />
-        </Link>
-        <div className="h-full flex flex-col  ">
-          <h1 className="mt-5 text-lg font-bold h-full text-center ">
-            {project.title}
-          </h1>
-          <p className="  text-md text-justify  p-2 inline-block align-bottom ">
-            {project.description}
-          </p>
+
+          <div className="h-full flex flex-col  ">
+            <h1 className="mt-5 text-lg font-bold h-full text-center ">
+              {project.title}
+            </h1>
+            <p className="  text-md text-justify  p-2 inline-block align-bottom ">
+              {project.description}
+            </p>
+          </div>
         </div>
-      </div>
+      </Link>
     </Tilt>
   );
 };
