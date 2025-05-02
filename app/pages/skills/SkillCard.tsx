@@ -8,12 +8,12 @@ type Props = {
     id: number;
     title: string;
     image: string;
-    percent: string;
+    
   };
 };
 
 const SkillCard = ({ skill }: Props) => {
-  const { image, title, percent } = skill;
+  const { image, title } = skill;
   return (
     <div
       data-aos="flip-left"
@@ -36,9 +36,6 @@ const SkillCard = ({ skill }: Props) => {
       <h1 className="text-[1.125rem] mt-4 text-textprimary font-[600]">
         {title}
       </h1>
-      <div className="bg-black mt-4 rounded-lg col-span-2 p-2 text-white opacity-40">
-        {percent}
-      </div>
     </div>
   );
 };

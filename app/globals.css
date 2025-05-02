@@ -38,7 +38,7 @@ html.dark {
   --text-secondary: #d1d5db;
   --text-tertiary:  #ffffff;
   --text-mobile: #ffffff;
-  --accent__one: #032e15;
+  --accent__one: #0d542b;
   --button-bg: #002c22;
   --button-bg-hover: #065f46;
   --button-text: #ffffff;
@@ -62,7 +62,7 @@ html.dark {
   .skill__card {
     background-color: var(--bg-skill);
     color: var(--text-secondary);
-    @apply p-6 duration-300 grid grid-cols-2 transition-all items-center cursor-pointer text-center h-60 rounded-lg;
+    @apply p-6 duration-300 grid grid-cols-2 transition-all items-center justify-center cursor-pointer text-center h-60 rounded-lg;
   }
   .checkbox {
     @apply w-7 h-7 flex flex-col items-center justify-center;
