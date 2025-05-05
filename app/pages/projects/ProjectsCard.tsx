@@ -4,7 +4,7 @@ import Link from "next/link";
 import * as React from "react";
 import Tilt from "react-parallax-tilt";
 import "react-multi-carousel/lib/styles.css";
-import { FaGithub, FaLink } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { LuMonitorUp } from "react-icons/lu";
 
 type Props = {
@@ -96,7 +96,6 @@ const ProjectCard = ({ project }: Props) => {
               <Link
                 href={project.url}
                 target="_blank"
-                
                 className="skill__card__select"
               >
                 Click to view site
@@ -105,16 +104,12 @@ const ProjectCard = ({ project }: Props) => {
               <Link
                 href={project.url2}
                 target="_blank"
-                
                 className="skill__card__select"
               >
                 Check it out on GitHub
                 <FaGithub />
               </Link>
-              <button
-                
-                className="mt-2 text-sm text-gray-500 hover:underline self-center"
-              >
+              <button className="mt-2 text-sm text-gray-500 hover:underline self-center">
                 Cancel
               </button>
             </div>

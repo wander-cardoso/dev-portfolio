@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
-import Hero from "./Hero/Hero";;
+import Hero from "./Hero/Hero";
 import About from "@/app/pages/about/page";
 import Projects from "@/app/pages/projects/page";
 import Skills from "@/app/pages/skills/page";

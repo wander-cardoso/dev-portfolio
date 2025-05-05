@@ -25,13 +25,7 @@ const SkillCard = ({ skill }: Props) => {
         (e.currentTarget.style.backgroundColor = "var(--bg-skill)")
       }
     >
-      <Image
-        src={image}
-        alt={title}
-        width={100}
-        height={100}
-        className=""
-      />
+      <Image src={image} alt={title} width={100} height={100} className="" />
       <h1 className=" skill__text">{title}</h1>
     </div>
   );

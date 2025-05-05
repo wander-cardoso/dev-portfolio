@@ -46,7 +46,7 @@ export const projectData = [
     description: "A complete store for clothing and accessories.",
     icon: "/images/siteljmeteora.png",
     url: "https://projeto-meteora-ecommerce.vercel.app/",
-    url2: "https://github.com/wander-cardoso/projeto-meteora-ecommerce"
+    url2: "https://github.com/wander-cardoso/projeto-meteora-ecommerce",
   },
   {
     id: 4,
@@ -55,7 +55,7 @@ export const projectData = [
     description: "A great way to randomly draw names for a Secret Santa game.",
     icon: "/images/amigo-secreto.png",
     url: "https://amigo-secreto-ten-sigma.vercel.app/",
-    url2: "https://github.com/wander-cardoso/amigo-secreto"
+    url2: "https://github.com/wander-cardoso/amigo-secreto",
   },
   {
     id: 5,
@@ -65,7 +65,7 @@ export const projectData = [
       "A site dedicated to event organizers who want a practical and secure way to manage ticket sales.",
     icon: "/images/compre-ticket.png",
     url: "https://compre-ingresso.vercel.app/",
-    url2: "https://github.com/wander-cardoso/compre-ingresso"
+    url2: "https://github.com/wander-cardoso/compre-ingresso",
   },
   {
     id: 6,
@@ -75,7 +75,7 @@ export const projectData = [
       "A very useful app for all users to assist with shopping, helping with organization, saving money, and ensuring you don’t forget any items.",
     icon: "/images/lista-de-compras.png",
     url: "https://lista-de-compras-wheat-eta.vercel.app/",
-    url2: " https://github.com/wander-cardoso/lista-de-compras"
+    url2: " https://github.com/wander-cardoso/lista-de-compras",
   },
 ];
 
@@ -84,57 +84,48 @@ export const skillsData = [
     id: 1,
     title: "React",
     image: "/images/react.svg",
-
   },
   {
     id: 2,
     title: "Next JS",
     image: "/images/nextjs.svg",
-
   },
 
   {
     id: 3,
     title: "JavaScript",
     image: "/images/js.svg",
-
   },
   {
     id: 4,
     title: "TypeScript",
     image: "/images/ts.svg",
-
   },
   {
     id: 5,
     title: "Tailwind CSS",
     image: "/images/tailwind.svg",
-
   },
   {
     id: 6,
     title: "HTML",
     image: "/images/html.svg",
-
   },
   {
     id: 7,
     title: "CSS",
     image: "/images/css.svg",
-
   },
   {
     id: 8,
     title: "Node JS",
     image: "/images/node.svg",
-
   },
 
   {
     id: 9,
     title: "Python",
     image: "/images/python.svg",
-
   },
 ];
 
