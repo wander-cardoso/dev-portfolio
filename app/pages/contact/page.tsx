@@ -5,7 +5,7 @@ import ContactForm from "./ContactForm";
 const Contact = () => {
   return (
     <div
-      className="pt-16 pb-16"
+      className="pt-16 pb-16 h-full"
       style={{
         backgroundColor: "var(--bg-primary)",
         color: "var(--text-primary)",

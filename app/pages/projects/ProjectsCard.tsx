@@ -87,7 +87,7 @@ const ProjectCard = ({ project }: Props) => {
               backgroundColor: "var(--button-bg)",
               color: "var(--text-tertiary)",
             }}
-            className="p-6 rounded-xl w-[95%] max-w-lg animate-fade-in-up "
+            className="p-6 rounded-xl w-[95%] h-60  "
           >
             <h2 className="text-xl font-semibold mb-4 text-center">
               Select an option
@@ -109,9 +109,7 @@ const ProjectCard = ({ project }: Props) => {
                 Check it out on GitHub
                 <FaGithub />
               </Link>
-              <button className="mt-2 text-sm text-gray-500 ">
-                Cancel
-              </button>
+              <button className="mt-2 text-sm text-gray-500 ">Cancel</button>
             </div>
           </div>
         </div>

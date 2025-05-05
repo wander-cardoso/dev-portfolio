@@ -59,7 +59,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div id="contact" className="bg-black/20 rounded-lg p-4 m-10 w-auto overflow-hidden">
+    <div
+      id="contact"
+      className="bg-black/20 rounded-lg p-4 m-10 w-auto overflow-hidden"
+    >
       <h1 className="text-bg text-2xl md:text-3xl lg:text-[2.5rem] font-bold">
         Let's Work Together?
       </h1>

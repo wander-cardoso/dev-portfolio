@@ -8,7 +8,7 @@ import SectionHeading from "../../components/Helper/SectionHeading";
 const Skills = () => {
   return (
     <div
-      className="pt-16 pb-16 w-full overflow-hidden"
+      className="pt-16 pb-16 w-full h-full"
       style={{
         backgroundColor: "var(--bg-tertiary)",
         color: "var(--text-primary)",
