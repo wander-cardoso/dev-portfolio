@@ -87,7 +87,7 @@ const ProjectCard = ({ project }: Props) => {
               backgroundColor: "var(--button-bg)",
               color: "var(--text-tertiary)",
             }}
-            className="p-6 rounded-xl w-[90%] max-w-md animate-fade-in-up "
+            className="p-6 rounded-xl w-[95%] max-w-lg animate-fade-in-up "
           >
             <h2 className="text-xl font-semibold mb-4 text-center">
               Select an option
@@ -96,7 +96,7 @@ const ProjectCard = ({ project }: Props) => {
               <Link
                 href={project.url}
                 target="_blank"
-                className="skill__card__select"
+                className="project__card__select"
               >
                 Click to view site
                 <LuMonitorUp />
@@ -104,12 +104,12 @@ const ProjectCard = ({ project }: Props) => {
               <Link
                 href={project.url2}
                 target="_blank"
-                className="skill__card__select"
+                className="project__card__select"
               >
                 Check it out on GitHub
                 <FaGithub />
               </Link>
-              <button className="mt-2 text-sm text-gray-500 hover:underline self-center">
+              <button className="mt-2 text-sm text-gray-500 ">
                 Cancel
               </button>
             </div>

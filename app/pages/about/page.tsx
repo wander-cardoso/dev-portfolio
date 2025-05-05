@@ -8,7 +8,7 @@ import { FaCheck } from "react-icons/fa";
 const About = () => {
   return (
     <div
-      className="pt-16 pb-16"
+      className="pt-16 pb-16 overflow-hidden"
       style={{
         backgroundColor: "var(--bg-tertiary)",
         color: "var(--text-primary)",
