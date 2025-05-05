@@ -15,7 +15,7 @@ const Skills = () => {
       }}
     >
       <SectionHeading> My Skills </SectionHeading>
-      <div className=" grid grid-cols-2 md:grid-cols-3 gap-x-10 gap-y-2 justify-center w-full items-center mt-20">
+      <div className=" grid grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-2 justify-center w-full items-center mt-20">
         {skillsData.map((skill) => {
           return (
             <div key={skill.id}>
