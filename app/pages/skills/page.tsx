@@ -8,14 +8,14 @@ import SectionHeading from "../../components/Helper/SectionHeading";
 const Skills = () => {
   return (
     <div
-      className="pt-16 pb-16 w-full h-full"
+      className="pt-16 pb-16 w-full"
       style={{
         backgroundColor: "var(--bg-tertiary)",
         color: "var(--text-primary)",
       }}
     >
       <SectionHeading> My Skills </SectionHeading>
-      <div className=" grid grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-2 justify-center w-full items-center mt-20">
+      <div className=" grid grid-cols-2 lg:grid-cols-3 h-full gap-x-10 gap-y-2 justify-center w-full items-center mt-20">
         {skillsData.map((skill) => {
           return (
             <div key={skill.id}>

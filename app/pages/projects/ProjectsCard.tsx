@@ -87,9 +87,9 @@ const ProjectCard = ({ project }: Props) => {
               backgroundColor: "var(--button-bg)",
               color: "var(--text-tertiary)",
             }}
-            className="p-6 rounded-xl w-[95%] h-60  "
+            className="p-6 rounded-xl w-[95%] h-80  "
           >
-            <h2 className="text-xl font-semibold mb-4 text-center">
+            <h2 className="text-3xl lg:text-4xl font-semibold mb-4 text-center">
               Select an option
             </h2>
             <div className="flex flex-col gap-3">
