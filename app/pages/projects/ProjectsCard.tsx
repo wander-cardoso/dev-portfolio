@@ -96,7 +96,7 @@ const ProjectCard = ({ project }: Props) => {
               <Link
                 href={project.url}
                 target="_blank"
-                onClick={closeModal}
+                
                 className="skill__card__select"
               >
                 Click to view site
@@ -105,14 +105,14 @@ const ProjectCard = ({ project }: Props) => {
               <Link
                 href={project.url2}
                 target="_blank"
-                onClick={closeModal}
+                
                 className="skill__card__select"
               >
                 Check it out on GitHub
                 <FaGithub />
               </Link>
               <button
-                onClick={closeModal}
+                
                 className="mt-2 text-sm text-gray-500 hover:underline self-center"
               >
                 Cancel
