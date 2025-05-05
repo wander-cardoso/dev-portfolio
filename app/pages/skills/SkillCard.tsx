@@ -8,7 +8,6 @@ type Props = {
     id: number;
     title: string;
     image: string;
-    
   };
 };
 
@@ -31,11 +30,9 @@ const SkillCard = ({ skill }: Props) => {
         alt={title}
         width={100}
         height={100}
-        className="mx-auto object-cover"
+        className=""
       />
-      <h1 className="text-[1.125rem] mt-4 text-textprimary font-[600]">
-        {title}
-      </h1>
+      <h1 className=" skill__text">{title}</h1>
     </div>
   );
 };

@@ -14,7 +14,7 @@
   --bg-text: #d6d3d1;
   --text-primary: #006045;
   --text-secondary: #18181b;
-  --text-tertiary:  #292524;
+  --text-tertiary: #292524;
   --text-mobile: #000000;
   --accent__one: #032e15;
   --button-bg: #d6d3d1;
@@ -36,7 +36,7 @@ html.dark {
   --bg-text: #032e15;
   --text-primary: #ffffff;
   --text-secondary: #d1d5db;
-  --text-tertiary:  #ffffff;
+  --text-tertiary: #ffffff;
   --text-mobile: #ffffff;
   --accent__one: #00a63e;
   --button-bg: #002c22;
@@ -62,8 +62,16 @@ html.dark {
   .skill__card {
     background-color: var(--bg-skill);
     color: var(--text-secondary);
-    @apply p-6 duration-300 grid grid-cols-2 transition-all items-center justify-center cursor-pointer text-center h-60 rounded-lg;
+    @apply  duration-300 grid grid-cols-2 transition-all items-center justify-center h-20 w-40 mx-auto lg:h-40 lg:w-full lg:p-10 rounded-lg;
   }
+  .skill__text{
+    @apply items-center text-sm lg:text-xl text-justify overflow-hidden text-clip
+  }
+
+  .skill__card__select {
+    @apply text-base md:text-lg lg:text-3xl  flex gap-5 items-center justify-center hover:text-green-950;
+  }
+
   .checkbox {
     @apply w-7 h-7 flex flex-col items-center justify-center;
   }

@@ -1,3 +1,5 @@
+import { url } from "inspector";
+
 export const BaseInfo = {
   name: "Wander Cardoso",
   position: "Full-Stack Developer",
@@ -20,11 +22,12 @@ export const projectData = [
   {
     id: 1,
     title: "Number Picker",
-    percent: " 97%",
+    percent: " 100%",
     description:
       "Ready to draw some numbers? This app makes your game more dynamic, simple, and fair when picking random numbers.",
     icon: "/images/sorteador-numeros.png",
     url: "https://sorteador-numeros-pearl.vercel.app/",
+    url2: "https://github.com/wander-cardoso/sorteador-numeros",
   },
   {
     id: 2,
@@ -34,6 +37,7 @@ export const projectData = [
       "An identical app inspired by McDonald's, suitable for any fast-food business.",
     icon: "/images/fswdonalds.png",
     url: "https://wanderappdonalds.vercel.app/fsw-donalds",
+    url2: "https://github.com/wander-cardoso/projeto-fullstack-mcdonalds",
   },
   {
     id: 3,
@@ -42,6 +46,7 @@ export const projectData = [
     description: "A complete store for clothing and accessories.",
     icon: "/images/siteljmeteora.png",
     url: "https://projeto-meteora-ecommerce.vercel.app/",
+    url2: "https://github.com/wander-cardoso/projeto-meteora-ecommerce"
   },
   {
     id: 4,
@@ -50,6 +55,7 @@ export const projectData = [
     description: "A great way to randomly draw names for a Secret Santa game.",
     icon: "/images/amigo-secreto.png",
     url: "https://amigo-secreto-ten-sigma.vercel.app/",
+    url2: "https://github.com/wander-cardoso/amigo-secreto"
   },
   {
     id: 5,
@@ -59,6 +65,7 @@ export const projectData = [
       "A site dedicated to event organizers who want a practical and secure way to manage ticket sales.",
     icon: "/images/compre-ticket.png",
     url: "https://compre-ingresso.vercel.app/",
+    url2: "https://github.com/wander-cardoso/compre-ingresso"
   },
   {
     id: 6,
@@ -68,6 +75,7 @@ export const projectData = [
       "A very useful app for all users to assist with shopping, helping with organization, saving money, and ensuring you don’t forget any items.",
     icon: "/images/lista-de-compras.png",
     url: "https://lista-de-compras-wheat-eta.vercel.app/",
+    url2: " https://github.com/wander-cardoso/lista-de-compras"
   },
 ];
 
