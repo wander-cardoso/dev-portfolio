@@ -9,6 +9,13 @@ import Contact from "@/app/pages/contact/page";
 import "aos/dist/aos.css";
 import Aos from "aos";
 
+const sections = [
+  { id: "about", Component: About },
+  { id: "projects", Component: Projects },
+  { id: "skills", Component: Skills },
+  { id: "contact", Component: Contact },
+];
+
 const Home = () => {
   useEffect(() => {
     const initAOS = async () => {
@@ -23,12 +30,15 @@ const Home = () => {
     initAOS();
   }, []);
   return (
-    <div className="overflow-hidden">
-      <Hero />
-      <About />
-      <Projects />
-      <Skills />
-      <Contact />
+    <div className="overflow-hidden scroll-smooth">
+      <section id="home">
+        <Hero />
+      </section>
+      {sections.map(({ id, Component }) => (
+        <section key={id} id={id} className="scroll-mt-[5rem]">
+          <Component />
+        </section>
+      ))}
     </div>
   );
 };

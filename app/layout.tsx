@@ -11,7 +11,7 @@ const font = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "",
+  title: "Potifyle | Wander",
   description: "O mais completo portifólio FullStack.",
   icons: {
     icon: "/images/favicon.ico",

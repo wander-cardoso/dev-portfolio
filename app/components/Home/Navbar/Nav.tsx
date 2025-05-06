@@ -7,6 +7,8 @@ import React, { useEffect, useState } from "react";
 import { HiBars3BottomRight } from "react-icons/hi2";
 import ToggleTheme from "../../Helper/ToggleTheme";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import handleScroll from "../../Helper/handleScroll";
+
 
 // define props type
 
@@ -38,7 +40,7 @@ const Nav = ({ openNav }: Props) => {
       style={{
         backgroundColor: "var(--bg-mobile",
       }}
-      className={`" fixed ${navBg ? " h-12" : "var(--bg-primary)"} h-[10vh] z-[10]  w-full  transition-all duration-200 `}
+      className={`" fixed ${navBg ? " h-12" : "var(--bg-primary)"} h-[10vh] z-[10]  w-full  transition-all duration-200 scroll-mt-24`}
     >
       <div className="flex items-center h-full justify-between  w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
         {/* Logo Section */}
@@ -56,9 +58,17 @@ const Nav = ({ openNav }: Props) => {
           <div className="hidden xl:flex items-center gap-14 space-x-10">
             {navLinks.map((navlink) => {
               return (
-                <Link key={navlink.id} href={navlink.url}>
-                  <p className="nav__link">{navlink.label}</p>
-                </Link>
+                <a
+                  key={navlink.id}
+                  href={navlink.url}
+                  className="nav__link"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleScroll(navlink.url.replace("#", ""));
+                  }}
+                >
+                  {navlink.label}
+                </a>
               );
             })}
           </div>

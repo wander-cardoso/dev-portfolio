@@ -1,12 +1,8 @@
-import { url } from "inspector";
-
 export const BaseInfo = {
   name: "Wander Cardoso",
   position: "Full-Stack Developer",
   description:
     "I am a Full-Stack Developer with a strong passion for technology and a commitment to delivering customized solutions for applications, systems, and websites. By combining creativity with technical expertise, I support businesses in enhancing their online presence and achieving their strategic objectives.",
-  profilePic:
-    "https://media.licdn.com/dms/image/v2/D4D03AQGtcXbWYhHYQA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1714042109702?e=1749686400&v=beta&t=O_5-JSvqTDsMhCHO-yz9Dp8-DIf9XGTZLRFHDof-vFU",
 };
 
 export const aboutInfo = {

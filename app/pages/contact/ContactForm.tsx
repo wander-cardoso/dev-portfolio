@@ -109,6 +109,7 @@ const ContactForm = () => {
         <div>
           <select
             name="service"
+            defaultValue=""
             className="w-full mt-5  px-4 py-3.5 rounded-md  outline-none"
             style={{
               backgroundColor: "var(--bg-primary)",
@@ -116,7 +117,7 @@ const ContactForm = () => {
               border: "1.5px solid var(--accent)",
             }}
           >
-            <option value="" disabled selected>
+            <option value="" disabled>
               Select a service
             </option>
             <option value="frontend">Frontend Development</option>

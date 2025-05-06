@@ -87,12 +87,12 @@ const ProjectCard = ({ project }: Props) => {
               backgroundColor: "var(--button-bg)",
               color: "var(--text-tertiary)",
             }}
-            className="p-6 rounded-xl w-[95%] h-80  "
+            className="p-6 rounded-xl w-[95%] h-80 "
           >
-            <h2 className="text-3xl lg:text-4xl font-semibold mb-4 text-center">
+            <h2 className="text-3xl lg:text-4xl font-semibold mb-4 text-center ">
               Select an option
             </h2>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col  mt-10 gap-10">
               <Link
                 href={project.url}
                 target="_blank"
@@ -109,7 +109,9 @@ const ProjectCard = ({ project }: Props) => {
                 Check it out on GitHub
                 <FaGithub />
               </Link>
-              <button className="mt-2 text-sm text-gray-500 ">Cancel</button>
+              <button className="mt-10 text-base underline text-gray-500 hover:text-gray-200">
+                Cancel
+              </button>
             </div>
           </div>
         </div>
