@@ -39,8 +39,12 @@ const Nav = ({ openNav }: Props) => {
       style={{
         backgroundColor: "var(--bg-mobile",
       }}
-      className={`" fixed ${navBg ? " h-12" : "var(--bg-primary)"} h-[10vh] z-[10]  w-full  transition-all duration-200 scroll-mt-24`}
+      className={`fixed top-0 z-[10] w-full transition-all duration-300 ${
+  navBg ? "sm:h-15 md:h-11" : "h-[10vh]"
+} bg-[var(--bg-primary)]`}
     >
+
+      {/* className={ */}
       <div className="flex items-center h-full justify-between  w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
         {/* Logo Section */}
         <Link href="/">
