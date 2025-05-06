@@ -9,7 +9,6 @@ import ToggleTheme from "../../Helper/ToggleTheme";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import handleScroll from "../../Helper/handleScroll";
 
-
 // define props type
 
 type Props = {

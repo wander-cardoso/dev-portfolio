@@ -1,9 +1,9 @@
 import { navLinks } from "@/constant/constant";
-import Link from "next/link";
 import React from "react";
 import { CgClose } from "react-icons/cg";
+import handleScroll from "../../Helper/handleScroll";
 
-// define props type
+
 type Props = {
   showNav: boolean;
   closeNav: () => void;
@@ -29,11 +29,19 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
       >
         {navLinks.map((navlink) => {
           return (
-            <Link key={navlink.id} href={navlink.url} onClick={closeNav}>
-              <p className=" nav__link text-[20px] ml-12 border-b-[1.5px] pb-2 border-white sm:text-[30px]">
+            <a
+              key={navlink.id}
+              href={navlink.url}
+              onClick={(e) => {
+                e.preventDefault();
+                handleScroll(navlink.url.replace("#", ""));
+                closeNav();
+              }}
+            >
+              <p className="nav__link text-[20px] ml-12 border-b-[1.5px] pb-2 border-white sm:text-[30px]">
                 {navlink.label}
               </p>
-            </Link>
+            </a>
           );
         })}
         {/* close Button*/}
