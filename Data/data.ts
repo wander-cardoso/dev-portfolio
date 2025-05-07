@@ -28,7 +28,7 @@ export const projectData = [
   {
     id: 2,
     title: "FSW-MCDonalds App",
-    percent: "95%",
+    percent: "100%",
     description:
       "An identical app inspired by McDonald's, suitable for any fast-food business.",
     icon: "/images/fswdonalds.png",
