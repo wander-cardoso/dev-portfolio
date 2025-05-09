@@ -37,7 +37,7 @@ Desenvolvido do zero com foco em:
 ## 🌐 Deploy
 
 Meu portfólio está online graças à [**Vercel**](https://vercel.com).  
-Clique aqui para acessar 👉 [dev-portifyle.vercel.app](https://dev-portifyle.vercel.app/)
+Clique aqui para acessar 👉 [dev-portifyle.vercel.app](https://dev-wander-portfolio.vercel.app/)
 
 ---
 
