@@ -45,7 +45,7 @@ const Nav = ({ openNav }: Props) => {
     >
 
       {/* className={ */}
-      <div className="flex items-center h-full justify-between  w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
+      <div className="flex items-center h-full justify-around  md:justify-between w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
         {/* Logo Section */}
         <Link href="/">
           <Image
@@ -57,7 +57,7 @@ const Nav = ({ openNav }: Props) => {
           />
         </Link>
         {/* Navigation Links */}
-        <div className="flex items-center space-x-10">
+        <div className="flex items-center md:justify-between sm:space-x-10">
           <div className="hidden xl:flex items-center gap-14 space-x-10">
             {navLinks.map((navlink) => {
               return (
@@ -78,12 +78,12 @@ const Nav = ({ openNav }: Props) => {
           {/* Button*/}
           <div className="flex items-center space-x-4">
             <Link href="/pages/contact">
-              <button className="md:px-10 md:py-2 px-5 py-2 text-green-900 fonts-semibold sm:text-base text-sm bg-white hover:bg-gray-200 hover:text-slate-900 transition-all duration-200 rounded-lg">
+              <button className=" px-2 py-1  md:px-5 md:py-2 text-green-900 fonts-semibold text-xs sm:text-base  bg-white hover:bg-gray-200 hover:text-slate-900 transition-all duration-200 rounded-md">
                 Hire Me!
               </button>
             </Link>
             <div
-              className="flex gap-8 px-10 justify-end text-4xl  items-end "
+              className="flex gap-2 sm:gap-8 md:px-10 justify-end text-4xl  items-end "
               style={{
                 color: "var(--text-mobile)",
               }}
@@ -110,7 +110,7 @@ const Nav = ({ openNav }: Props) => {
             {/* Mobile Menu Icon */}
             <HiBars3BottomRight
               onClick={openNav}
-              className="w-8 h-8 cursor-pointer text-primary xl:hidden"
+              className="w-12 h-full cursor-pointer text-primary xl:hidden"
               style={{
                 color: "var(--text-mobile)",
               }}

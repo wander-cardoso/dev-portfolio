@@ -87,7 +87,7 @@ const ProjectCard = ({ project }: Props) => {
               backgroundColor: "var(--button-bg)",
               color: "var(--text-tertiary)",
             }}
-            className="p-6 rounded-xl w-[95%] h-80 "
+            className="p-6 rounded-xl w-[95%] h-70 "
           >
             <h2 className="text-3xl lg:text-4xl font-semibold mb-4 text-center ">
               Select an option
@@ -109,7 +109,7 @@ const ProjectCard = ({ project }: Props) => {
                 Check it out on GitHub
                 <FaGithub />
               </Link>
-              <button className="mt-10 text-base underline text-gray-500 hover:text-gray-200">
+              <button className="mt-5 text-base underline text-gray-500 hover:text-gray-200">
                 Cancel
               </button>
             </div>
