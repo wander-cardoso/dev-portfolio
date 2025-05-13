@@ -62,10 +62,10 @@ html.dark {
   .skill__card {
     background-color: var(--bg-skill);
     color: var(--text-secondary);
-    @apply duration-300 grid grid-cols-2 transition-all items-center justify-center w-40 mx-auto h-40 md:w-full p-10 rounded-lg;
+    @apply duration-300 justify-center grid md:grid-cols-1 transition-all w-44 mx-auto h-40 md:w-full items-center rounded-lg;
   }
   .skill__text {
-    @apply items-center text-lg md:text-xl text-justify overflow-hidden text-clip;
+    @apply absolute text-center w-full text-lg tracking-[.063rem] md:text-xl overflow-hidden text-clip bottom-0;
   }
 
   .project__card__select {
