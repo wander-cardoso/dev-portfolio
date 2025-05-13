@@ -37,12 +37,13 @@ export const projectData = [
   },
   {
     id: 3,
-    title: "Meteora E-commerce",
-    percent: "75%",
-    description: "A complete store for clothing and accessories.",
-    icon: "/images/siteljmeteora.png",
-    url: "https://projeto-meteora-ecommerce.vercel.app/",
-    url2: "https://github.com/wander-cardoso/projeto-meteora-ecommerce",
+    title: "Shopping List",
+    percent: "100%",
+    description:
+      "A very useful app for all users to assist with shopping, helping with organization, saving money, and ensuring you don’t forget any items.",
+    icon: "/images/lista-de-compras.png",
+    url: "https://lista-de-compras-wheat-eta.vercel.app/",
+    url2: " https://github.com/wander-cardoso/lista-de-compras",
   },
   {
     id: 4,
@@ -63,15 +64,15 @@ export const projectData = [
     url: "https://compre-ingresso.vercel.app/",
     url2: "https://github.com/wander-cardoso/compre-ingresso",
   },
+  
   {
     id: 6,
-    title: "Shopping List",
-    percent: "100%",
-    description:
-      "A very useful app for all users to assist with shopping, helping with organization, saving money, and ensuring you don’t forget any items.",
-    icon: "/images/lista-de-compras.png",
-    url: "https://lista-de-compras-wheat-eta.vercel.app/",
-    url2: " https://github.com/wander-cardoso/lista-de-compras",
+    title: "Meteora E-commerce",
+    percent: "75%",
+    description: "A complete store for clothing and accessories.",
+    icon: "/images/siteljmeteora.png",
+    url: "https://projeto-meteora-ecommerce.vercel.app/",
+    url2: "https://github.com/wander-cardoso/projeto-meteora-ecommerce",
   },
 ];
 
