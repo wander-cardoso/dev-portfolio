@@ -42,7 +42,7 @@ const Hero = () => {
               {BaseInfo.description}
             </p>
 
-            <a  href="/curriculo-wander-europass.pdf" target="_blank" download>
+            <a  href="/Curriculo-Wander-Dev-Backend.pdf" target="_blank" download>
               <button
                 data-aos="zoom-down"
                 data-aos-delay="2000"

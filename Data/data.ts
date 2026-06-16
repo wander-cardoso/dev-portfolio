@@ -67,12 +67,12 @@ export const projectData = [
   
   {
     id: 6,
-    title: "Meteora E-commerce",
+    title: "Cidadão Urbano",
     percent: "75%",
-    description: "A complete store for clothing and accessories.",
+    description: "An application that aims to bring people closer to urban management..",
     icon: "/images/siteljmeteora.png",
-    url: "https://projeto-meteora-ecommerce.vercel.app/",
-    url2: "https://github.com/wander-cardoso/projeto-meteora-ecommerce",
+    url: "https://projeto-cidadao-urbano.onrender.com/",
+    url2: "https://github.com/wander-cardoso",
   },
 ];
 
@@ -87,7 +87,6 @@ export const skillsData = [
     title: "Next JS",
     image: "/images/nextjs.svg",
   },
-
   {
     id: 3,
     title: "JavaScript",
@@ -118,16 +117,60 @@ export const skillsData = [
     title: "Node JS",
     image: "/images/node.svg",
   },
-
   {
     id: 9,
     title: "Python",
     image: "/images/python.svg",
+  },
+  {
+    id: 10,
+    title: "AspNet",
+    image: "/images/aspnet.svg",
+  },
+    {
+    id: 11,
+    title: "C#",
+    image: "/images/csharp.svg",
+  },
+    {
+    id: 12,
+    title: "Java",
+    image: "/images/java.svg",
+  },
+    {
+    id: 13,
+    title: "Springboot",
+    image: "/images/springboot.svg",
+  },
+    {
+    id: 14,
+    title: "C++",
+    image: "/images/c.svg",
+  },
+    {
+    id: 15,
+    title: "Django",
+    image: "/images/django.svg",
+  },
+      {
+    id: 16,
+    title: "MySQL",
+    image: "/images/mysql.svg",
+  },
+      {
+    id: 17,
+    title: "SQLServer",
+    image: "/images/SQLServer.svg",
+  },
+      {
+    id: 18,
+    title: "Bootstrap",
+    image: "/images/bootstrap.svg",
   },
 ];
 
 export const contactData = {
   Telemovel: "(+351) 932 748 700",
   Email: "wander.hsmc@gmail.com",
-  Endereço: "São Victor - Braga , Portugal",
+  Endereço: "Braga - Braga, Portugal",
 };
