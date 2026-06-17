@@ -1,9 +1,15 @@
+"use client";
+
 import { navLinks } from "@/constant/constant";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { usePathname, useRouter } from "next/navigation";
+import handleScroll from "../../Helper/handleScroll";
 
 const Footer = () => {
+  const pathname = usePathname();
+  const router = useRouter();
   return (
     <div
       className=" pt-5 pb-1.5 items-center "
@@ -24,9 +30,20 @@ const Footer = () => {
       >
         {navLinks.map((navlink) => {
           return (
-            <Link key={navlink.id} href={navlink.url} className="nav__link">
-              <p>{navlink.label}</p>
-            </Link>
+            <a key={navlink.id} href={navlink.url} className="nav__link"
+              onClick={(e) => {
+                e.preventDefault();
+                const sectionId = navlink.url.replace("#", "");
+
+                if (pathname === "#home") {
+                  handleScroll((sectionId));
+                } else {
+                  router.push(`/${navlink.url}`);
+                }
+              }}
+            >
+              {navlink.label}
+            </a>
           );
         })}
       </div>
