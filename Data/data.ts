@@ -17,13 +17,12 @@ export const aboutInfo = {
 export const projectData = [
   {
     id: 1,
-    title: "Number Picker",
-    percent: " 100%",
-    description:
-      "Ready to draw some numbers? This app makes your game more dynamic, simple, and fair when picking random numbers.",
-    icon: "/images/sorteador-numeros.png",
-    url: "https://sorteador-numeros-pearl.vercel.app/",
-    url2: "https://github.com/wander-cardoso/sorteador-numeros",
+    title: "Cidadão Urbano",
+    percent: "100%",
+    description: "An application that aims to bring people closer to urban management..",
+    icon: "/images/cidadao-urbano.png",
+    url: "https://projeto-cidadao-urbano.onrender.com/",
+    url2: "https://github.com/wander-cardoso",
   },
   {
     id: 2,
@@ -64,15 +63,15 @@ export const projectData = [
     url: "https://compre-ingresso.vercel.app/",
     url2: "https://github.com/wander-cardoso/compre-ingresso",
   },
-  
   {
     id: 6,
-    title: "Cidadão Urbano",
-    percent: "100%",
-    description: "An application that aims to bring people closer to urban management..",
-    icon: "/images/cidadao-urbano.png",
-    url: "https://projeto-cidadao-urbano.onrender.com/",
-    url2: "https://github.com/wander-cardoso",
+    title: "Number Picker",
+    percent: " 100%",
+    description:
+      "Ready to draw some numbers? This app makes your game more dynamic, simple, and fair when picking random numbers.",
+    icon: "/images/sorteador-numeros.png",
+    url: "https://sorteador-numeros-pearl.vercel.app/",
+    url2: "https://github.com/wander-cardoso/sorteador-numeros",
   },
 ];
 
