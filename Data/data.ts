@@ -39,7 +39,7 @@ export const projectData = [
     title: "Clinica Veterinária",
     percent: "100%",
     description:
-      "A very useful app for all users to assist with shopping, helping with organization, saving money, and ensuring you don’t forget any items.",
+      "A full veterinary clinic management platform for managing clients, animals, consultations, and staff roles with secure authentication and database integration.",
     icon: "/images/clinica-vet.png",
     url: "https://projeto-clinica-veterinaria-python.onrender.com/",
     url2: " https://github.com/wander-cardoso/projeto_clinica_veterinaria_python",
