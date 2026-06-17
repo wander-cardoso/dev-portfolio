@@ -3,11 +3,13 @@
 import { navLinks } from "@/constant/constant";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { HiBars3BottomRight } from "react-icons/hi2";
 import ToggleTheme from "../../Helper/ToggleTheme";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import handleScroll from "../../Helper/handleScroll";
+
 
 // define props type
 
@@ -34,14 +36,15 @@ const Nav = ({ openNav }: Props) => {
     };
   }, []);
 
+  const pathname = usePathname();
+  const router = useRouter();
   return (
     <div
       style={{
         backgroundColor: "var(--bg-mobile",
       }}
-      className={`fixed top-0 z-[10] w-full transition-all duration-300 ${
-  navBg ? "sm:h-15 md:h-11" : "h-[10vh]"
-} bg-[var(--bg-primary)]`}
+      className={`fixed top-0 z-[10] w-full transition-all duration-300 ${navBg ? "sm:h-15 md:h-11" : "h-[10vh]"
+        } bg-[var(--bg-primary)]`}
     >
 
       {/* className={ */}
@@ -61,13 +64,16 @@ const Nav = ({ openNav }: Props) => {
           <div className="hidden xl:flex items-center gap-14 space-x-10">
             {navLinks.map((navlink) => {
               return (
-                <a
-                  key={navlink.id}
-                  href={navlink.url}
-                  className="nav__link"
+                <a key={navlink.id} href={navlink.url} className="nav__link"
                   onClick={(e) => {
                     e.preventDefault();
-                    handleScroll(navlink.url.replace("#", ""));
+                    const sectionId = navlink.url.replace("#", "");
+
+                    if (pathname === "#home") {
+                      handleScroll((sectionId));
+                    } else {
+                      router.push(`/${navlink.url}`);
+                    }
                   }}
                 >
                   {navlink.label}

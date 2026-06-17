@@ -68,9 +68,9 @@ export const projectData = [
   {
     id: 6,
     title: "Cidadão Urbano",
-    percent: "75%",
+    percent: "100%",
     description: "An application that aims to bring people closer to urban management..",
-    icon: "/images/siteljmeteora.png",
+    icon: "/images/cidadao-urbano.png",
     url: "https://projeto-cidadao-urbano.onrender.com/",
     url2: "https://github.com/wander-cardoso",
   },
@@ -145,7 +145,7 @@ export const skillsData = [
     {
     id: 14,
     title: "C++",
-    image: "/images/c.svg",
+    image: "/images/c++.svg",
   },
     {
     id: 15,

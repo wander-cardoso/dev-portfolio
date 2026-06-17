@@ -10,7 +10,8 @@ const config: Config = {
     extend: {
       colors: {},
     },
-    plugins: [],
   },
+  plugins: [],
 };
+
 export default config;
