@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "aos": "^3.0.0-beta.6",
+    "geist": "^1.7.2",
     "i18next": "^25.0.1",
     "next": "14.2.27",
     "react": "^18",
