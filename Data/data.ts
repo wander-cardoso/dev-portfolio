@@ -36,6 +36,16 @@ export const projectData = [
   },
   {
     id: 3,
+    title: "Clinica Veterinária",
+    percent: "100%",
+    description:
+      "A very useful app for all users to assist with shopping, helping with organization, saving money, and ensuring you don’t forget any items.",
+    icon: "/images/clinica-vet.png",
+    url: "https://projeto-clinica-veterinaria-python.onrender.com/",
+    url2: " https://github.com/wander-cardoso/projeto_clinica_veterinaria_python",
+  },
+{
+    id: 4,
     title: "Shopping List",
     percent: "100%",
     description:
@@ -43,15 +53,6 @@ export const projectData = [
     icon: "/images/lista-de-compras.png",
     url: "https://lista-de-compras-wheat-eta.vercel.app/",
     url2: " https://github.com/wander-cardoso/lista-de-compras",
-  },
-  {
-    id: 4,
-    title: "Secret Santa",
-    percent: "100%",
-    description: "A great way to randomly draw names for a Secret Santa game.",
-    icon: "/images/amigo-secreto.png",
-    url: "https://amigo-secreto-ten-sigma.vercel.app/",
-    url2: "https://github.com/wander-cardoso/amigo-secreto",
   },
   {
     id: 5,
