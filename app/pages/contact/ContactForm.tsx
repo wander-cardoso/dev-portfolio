@@ -27,43 +27,49 @@ const ContactForm = () => {
   };
 
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+  event.preventDefault();
 
-    setResult("");
-    setIsLoading(true);
+  const form = event.currentTarget;
 
-    const formData = new FormData(event.currentTarget);
+  setResult("");
+  setIsLoading(true);
 
-    const validationError = validateForm(formData);
+  const formData = new FormData(form);
 
-    if (validationError) {
-      setResult(validationError);
-      setIsLoading(false);
-      return;
-    }
+  const validationError = validateForm(formData);
 
-    formData.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || "");
-
-    try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: formData,
-      });
-
-      const data = await response.json();
-
-      if (data.success) {
-        setResult("✅ Form submitted successfully!");
-        event.currentTarget.reset();
-      } else {
-        setResult(`❌ Error: ${data.message}`);
-      }
-    } catch {
-      setResult("❌ Something went wrong. Try again.");
-    }
-
+  if (validationError) {
+    setResult(validationError);
     setIsLoading(false);
-  };
+    return;
+  }
+
+  formData.append(
+    "access_key",
+    process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || ""
+  );
+
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("✅ Form submitted successfully!");
+      form.reset();
+    } else {
+      setResult(`❌ Error: ${data.message}`);
+    }
+  } catch (error) {
+    console.error("Fetch error:", error);
+    setResult("❌ Something went wrong. Check console.");
+  } finally {
+    setIsLoading(false);
+  }
+};
 
   return (
     <div id="contact" className="bg-black/50 rounded-lg p-4 m-10 w-auto">
